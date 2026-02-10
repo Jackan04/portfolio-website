@@ -64,11 +64,6 @@ body {
   padding: var(--spacing-lg);
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-}
-
 .container {
   max-width: 1000px;
   width: 100%;
@@ -105,21 +100,11 @@ button,
   color: #fff;
   padding: 8px 18px;
   border-radius: var(--border-radius);
-
-  transition-property: opacity;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
 }
 
 button:hover,
 .button:hover {
   opacity: 0.8;
-}
-
-.has-hover {
-  transition-property: color fill;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
 }
 
 .has-hover:hover {

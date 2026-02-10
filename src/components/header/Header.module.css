@@ -1,11 +1,26 @@
 .header {
   display: flex;
   justify-content: space-between;
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+nav ul {
+  display: flex;
+  gap: var(--spacing-lg);
 }
 
 .navLink {
+  font-weight: var(--weight-semi);
+  color: var(--color-caption);
 }
 
 .navLink.active {
   color: var(--color-accent);
+}
+
+.logo {
+  font-size: var(--font-heading);
+  font-weight: var(--weight-bold);
+  color: var(--color-caption);
 }

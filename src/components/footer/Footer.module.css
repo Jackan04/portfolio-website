@@ -2,3 +2,15 @@
   display: flex;
   justify-content: space-between;
 }
+
+.rightContent {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}

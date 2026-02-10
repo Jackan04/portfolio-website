@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
 :root {
   --color-accent: #6a98f8;
   --color-background: #ffffff;
@@ -8,10 +10,13 @@
   --color-gray-light: #f2f5f7;
 
   /* Font Sizes */
-  --font-title: 2.5rem;
   --font-heading: 1.5rem;
   --font-body: 1rem;
   --font-caption: 0.875rem;
+
+  /* Font Weights */
+  --weight-semi: 500;
+  --weight-bold: 600;
 
   --border-radius: 8px;
 
@@ -30,7 +35,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-accent: #89b0ff;
+    --color-accent: #3ca0ff;
     --color-background: #121417;
     --color-heading: #f2f5f7;
     --color-body: #d5d8dd;
@@ -44,6 +49,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "SN Pro", sans-serif;
 }
 
 body {
@@ -51,10 +57,11 @@ body {
 }
 
 .app {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: var(--spacing-lg);
 }
 
 main {
@@ -66,17 +73,12 @@ main {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  padding-inline: var(--spacing-lg);
 }
 
 p {
   font-size: var(--font-body);
   line-height: var(--lh-relaxed);
   color: var(--color-body);
-}
-
-h1 {
-  font-size: var(--font-title);
 }
 
 h2 {

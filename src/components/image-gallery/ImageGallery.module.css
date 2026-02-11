@@ -22,3 +22,23 @@
   justify-content: center;
   align-items: center;
 }
+
+.spinnerIcon {
+  fill: var(--color-body);
+  width: 48px;
+  height: 48px;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

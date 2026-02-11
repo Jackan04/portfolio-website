@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./ImageGallery.module.css";
 import UnsplashService from "../../services/unsplashService.js";
+import SpinnerIcon from "../../assets/icons/spinner.svg?react";
 
 export default function ImageGallery() {
   const [images, setImages] = useState([]);
@@ -25,7 +26,7 @@ export default function ImageGallery() {
   if (loading) {
     return (
       <div className={styles.loadingContainer}>
-        <p>Loading...</p>
+        <SpinnerIcon className={styles.spinnerIcon}></SpinnerIcon>
       </div>
     );
   }

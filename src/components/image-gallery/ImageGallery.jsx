@@ -5,23 +5,23 @@ import SpinnerIcon from "../../assets/icons/spinner.svg?react";
 
 export default function ImageGallery() {
   const [images, setImages] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
-  // useEffect(() => {
-  //   const fetchImages = async () => {
-  //     setLoading(true);
-  //     try {
-  //       const data = await UnsplashService.getAllImages();
-  //       setImages(data);
-  //     } catch (err) {
-  //       console.error("Error fetching images:", err);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
+  useEffect(() => {
+    const fetchImages = async () => {
+      setLoading(true);
+      try {
+        const data = await UnsplashService.getAllImages();
+        setImages(data);
+      } catch (err) {
+        console.error("Error fetching images:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  //   fetchImages();
-  // }, []);
+    fetchImages();
+  }, []);
 
   if (loading) {
     return (

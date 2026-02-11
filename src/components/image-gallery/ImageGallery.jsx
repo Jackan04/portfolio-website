@@ -33,14 +33,29 @@ export default function ImageGallery() {
 
   return (
     <div className={styles.gallery}>
-      {images.map((image) => {
+      {images.map((image, index) => {
         return (
-          <a href={image.links.html} target="_blank">
+          <a
+            key={index}
+            href={image.links.html}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src={image.urls.regular}
               loading="lazy"
               alt={image.alt_description}
             ></img>
+            <p className={styles.attribution}>
+              Photo by{" "}
+              <a href={image.user.links.html} target="_blank">
+                {image.user.name}
+              </a>{" "}
+              on{" "}
+              <a href="https://unsplash.com" target="_blank">
+                Unsplash
+              </a>
+            </p>
           </a>
         );
       })}

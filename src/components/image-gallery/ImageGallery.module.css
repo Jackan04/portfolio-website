@@ -17,6 +17,12 @@
   transform: scale(1.02);
 }
 
+.attribution {
+  display: hidden;
+  font-size: var(--font-caption);
+  color: var(--color-caption);
+}
+
 .loadingContainer {
   display: flex;
   justify-content: center;

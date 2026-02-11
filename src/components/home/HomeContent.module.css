@@ -5,5 +5,14 @@
 }
 
 .profileImage {
+  width: 128px;
+  height: 128px;
   border-radius: 100%;
+}
+
+@media (max-width: 480px) {
+  .profileImage {
+    width: 100px;
+    height: 100px;
+  }
 }

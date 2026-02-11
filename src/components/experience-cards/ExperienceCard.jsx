@@ -3,7 +3,7 @@ import styles from "./ExperienceCards.module.css";
 function Card({ label, url }) {
   return (
     <div className={styles.card}>
-      <a className="has-hover" href={url} target="_blank">
+      <a href={url} target="_blank">
         {label}
       </a>
     </div>

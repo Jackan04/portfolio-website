@@ -149,3 +149,27 @@ button:hover,
   width: 24px;
   height: 24px;
 }
+
+@media (max-width: 480px) {
+  :root {
+    --font-heading: 1.25rem;
+    --font-body: 1rem;
+    --font-caption: 0.875rem;
+
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 0.75rem;
+    --spacing-lg: 1.25rem;
+    --spacing-xl: 1.75rem;
+    --spacing-xxl: 2.5rem;
+  }
+}
+
+@media (hover: none) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  *:hover {
+    transform: none !important;
+  }
+}

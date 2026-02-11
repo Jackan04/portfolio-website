@@ -25,3 +25,13 @@ nav ul {
   font-weight: var(--weight-bold);
   color: var(--color-caption);
 }
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  .navLink.active {
+    color: var(--color-accent);
+  }
+}

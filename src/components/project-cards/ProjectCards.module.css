@@ -19,6 +19,7 @@
 .filterButtons {
   display: flex;
   gap: var(--spacing-sm);
+  padding-bottom: var(--spacing-lg);
 }
 
 button.active {

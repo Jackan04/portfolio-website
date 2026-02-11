@@ -15,3 +15,12 @@
 .card:hover > h2 {
   color: var(--color-accent);
 }
+
+.filterButtons {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+button.active {
+  background-color: var(--color-caption);
+}

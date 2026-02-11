@@ -5,7 +5,7 @@ import styles from "./HomeContent.module.css";
 
 export default function HomeContent() {
   return (
-    <div className={styles.container}>
+    <div className="content">
       <div className={styles.section}>
         <img
           width={100}

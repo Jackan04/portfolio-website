@@ -79,6 +79,12 @@ main {
   margin: 0 auto;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
 p {
   font-size: var(--font-body);
   line-height: var(--lh-relaxed);
@@ -111,15 +117,18 @@ ul {
 
 button,
 .button {
+  border: none;
   background-color: var(--color-accent);
   color: #fff;
   padding: 8px 18px;
   border-radius: var(--border-radius);
+  font-size: var(--font-body);
   font-weight: var(--weight-semi);
 }
 
 button:hover,
 .button:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -134,5 +143,3 @@ button:hover,
   width: 24px;
   height: 24px;
 }
-
-

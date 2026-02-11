@@ -8,8 +8,8 @@ export default function HomeContent() {
     <div className="content">
       <div className={styles.section}>
         <img
-          width={100}
-          height={100}
+          width={128}
+          height={128}
           src={profileImage}
           loading="lazy"
           alt="Profile Image"

@@ -4,18 +4,11 @@ import { useEffect, useState } from "react";
 
 export default function ProjectCards() {
   const [filter, setFilter] = useState(null);
-  const [visibleProjects, setVisibleProjects] = useState(allProjects);
 
-  useEffect(() => {
-    if (filter === null) {
-      setVisibleProjects(allProjects);
-    } else {
-      const filtered = allProjects.filter(
-        (project) => project.category === filter,
-      );
-      setVisibleProjects(filtered);
-    }
-  }, [filter]);
+  const visibleProjects =
+    filter === null
+      ? allProjects
+      : allProjects.filter((project) => project.category === filter);
 
   return (
     <div className="content">
@@ -67,7 +60,7 @@ function FilterButton({ label, value, filter, setFilter }) {
 
 function Card({ title, description, url }) {
   return (
-    <a href={url}>
+    <a href={url} target="_blank">
       <div className={styles.card}>
         <h2>{title}</h2>
         <p>{description}</p>

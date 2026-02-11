@@ -1,14 +1,16 @@
 import styles from "./Footer.module.css";
+import { getCurrentYear } from "../../script";
 import GitHubIcon from "../../assets/icons/github.svg?react";
 import LinkedInIcon from "../../assets/icons/linkedin.svg?react";
 import UnsplashIcon from "../../assets/icons/unsplash.svg?react";
 
 export default function Footer() {
+  const year = getCurrentYear();
   return (
     <footer>
       <div className={`container ${styles.footer}`}>
         <div className={styles.leftContent}>
-          <p>Copyright &copy; Jacob Asker</p>
+          <p>Copyright &copy; Jacob Asker {year}</p>
         </div>
         <div className={styles.rightContent}>
           <div className={styles.iconContainer}>

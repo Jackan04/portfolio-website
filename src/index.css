@@ -71,7 +71,7 @@ body {
 }
 
 main {
-  max-width: 580px;
+  max-width: 720px;
   width: 100%;
   margin: 0 auto;
 }
@@ -79,7 +79,9 @@ main {
 .main-content {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: var(--spacing-lg);
+  padding: var(--spacing-md);
 }
 
 p {
@@ -106,12 +108,6 @@ a {
 
 .inline-link {
   color: var(--color-accent);
-}
-
-.text-section {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
 }
 
 ul {
@@ -141,4 +137,15 @@ button:hover,
   fill: var(--color-body);
   width: 24px;
   height: 24px;
+}
+
+/* Home Page */
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.profile-image {
+  border-radius: 100%;
 }

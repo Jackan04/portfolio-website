@@ -61,7 +61,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: var(--spacing-lg);
+  padding: var(--spacing-lg) 0;
 }
 
 .container {
@@ -70,18 +70,15 @@ body {
   margin: 0 auto;
 }
 
-main {
+.main-content {
   max-width: 720px;
   width: 100%;
   margin: 0 auto;
-}
-
-.main-content {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: var(--spacing-lg);
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm);
 }
 
 p {

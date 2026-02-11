@@ -8,8 +8,8 @@ const projects = [
   },
   {
     category: "code",
-    url: "https://github.com/Jackan04/ShelfLife",
     title: "ShelfLife",
+    url: "https://github.com/Jackan04/ShelfLife",
     description:
       "iOS app built with Swift and SwiftUI that helps users track groceries and expiration dates. Search, add, update, and delete items, view upcoming and expired products, and organize groceries by category. Data is persisted using SwiftData.",
   },

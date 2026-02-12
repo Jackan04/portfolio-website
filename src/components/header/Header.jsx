@@ -7,7 +7,7 @@ export default function Header() {
     <header>
       <div className={`container ${styles.header}`}>
         <Link to="/" className={`${styles.logo} has-hover`}>
-          Jacob Asker
+          Jacob
         </Link>
         <nav>
           <ul>
@@ -18,7 +18,7 @@ export default function Header() {
               <CustomNavLink to="/projects" label="Projects" />
             </li>
             <li>
-              <CustomNavLink to="/photography" label="Photography" />
+              <CustomNavLink to="/photography" label="Photos" />
             </li>
           </ul>
         </nav>

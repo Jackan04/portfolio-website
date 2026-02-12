@@ -21,12 +21,17 @@
   display: flex;
 }
 
+.copyright {
+  font-size: var(--font-caption);
+  color: var(--color-caption);
+}
+
 @media (max-width: 480px) {
   .footer {
     flex-direction: column-reverse;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
     align-items: flex-start;
-    /* align-items: flex-end; */
+    margin-top: var(--spacing-lg);
   }
 
   .rightContent {

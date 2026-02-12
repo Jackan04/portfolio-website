@@ -9,7 +9,7 @@
   padding-left: var(--spacing-lg);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-sm);
 }
 
 .card:hover > h2 {

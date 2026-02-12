@@ -39,6 +39,14 @@ img {
   will-change: transform;
 }
 
+.unsplashRedirect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-lg);
+  gap: var(--spacing-sm);
+}
+
 @keyframes spin {
   0% {
     transform: rotateZ(0deg);

@@ -160,7 +160,8 @@ button,
     opacity: 0.8;
   }
 
-  .has-hover:hover {
+  .has-hover:hover,
+  .has-hover:hover * {
     cursor: pointer;
     color: var(--color-accent);
     fill: var(--color-accent);

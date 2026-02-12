@@ -23,7 +23,8 @@ img {
 
 .loadingContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: var(--spacing-md);
   align-items: center;
 }
 
@@ -32,7 +33,7 @@ img {
   width: 48px;
   height: 48px;
   animation-name: spin;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   will-change: transform;

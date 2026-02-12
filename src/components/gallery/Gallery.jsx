@@ -5,7 +5,9 @@ import SpinnerIcon from "../../assets/icons/spinner.svg?react";
 
 export default function Gallery() {
   const [images, setImages] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  console.log(images);
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -14,6 +16,7 @@ export default function Gallery() {
         const data = await UnsplashService.getAllImages();
         setImages(data);
       } catch (err) {
+        setImages([]);
         console.error("Error fetching images:", err);
       } finally {
         setLoading(false);
@@ -26,7 +29,16 @@ export default function Gallery() {
   if (loading) {
     return (
       <div className={styles.loadingContainer}>
+        <p>Loading gallery...</p>
         <SpinnerIcon className={styles.spinnerIcon} />
+      </div>
+    );
+  }
+
+  if (images.length < 1 || images == undefined) {
+    return (
+      <div className={styles.loadingContainer}>
+        <p>Failed to load the images from Unsplash.</p>
       </div>
     );
   }

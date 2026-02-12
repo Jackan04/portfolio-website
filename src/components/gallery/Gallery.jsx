@@ -34,18 +34,40 @@ export default function Gallery() {
   return (
     <div className={styles.gallery}>
       {images.map((image) => (
-        <a
-          key={image.id}
-          href={image.links.html}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={image.urls.regular}
-            loading="lazy"
-            alt={image.alt_description}
-          />
-        </a>
+        <div className={styles.imageCard}>
+          <a
+            key={image.id}
+            href={image.links.html}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={image.urls.regular}
+              loading="lazy"
+              alt={image.alt_description}
+            />
+          </a>
+          <p className={styles.attribution} key={image.id}>
+            Photo by{" "}
+            <a
+              href={image.user.links.html}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="has-hover"
+            >
+              {image.user.name}
+            </a>{" "}
+            on{" "}
+            <a
+              href="https://unsplash.com/"
+              className="has-hover"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Unsplash
+            </a>{" "}
+          </p>
+        </div>
       ))}
     </div>
   );

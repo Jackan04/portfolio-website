@@ -4,15 +4,19 @@
   gap: 1rem;
 }
 
-.gallery img {
+img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: var(--border-radius);
+}
+
+.imageCard {
   transition: transform 0.15s ease-out;
 }
 
-.attribution {
+.attribution,
+.attribution a {
   font-size: var(--font-caption);
   color: var(--color-caption);
 }
@@ -45,7 +49,7 @@
 }
 
 @media (hover: hover) {
-  .gallery img:hover {
+  .imageCard:hover {
     transform: scale(1.02);
   }
 }

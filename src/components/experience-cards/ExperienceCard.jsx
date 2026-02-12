@@ -3,7 +3,7 @@ import styles from "./ExperienceCards.module.css";
 function Card({ label, url }) {
   return (
     <div className={styles.card}>
-      <a href={url} target="_blank">
+      <a href={url} target="_blank" rel="noopener noreferrer">
         {label}
       </a>
     </div>

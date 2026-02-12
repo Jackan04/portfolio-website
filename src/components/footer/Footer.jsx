@@ -17,16 +17,22 @@ export default function Footer() {
             <a
               href="https://github.com/Jackan04?tab=repositories"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <GitHubIcon className="icon has-hover" />
             </a>
             <a
               href="https://www.linkedin.com/in/jacob-asker-a096a7352/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <LinkedInIcon className="icon has-hover" />
             </a>
-            <a href="https://unsplash.com/@jacobasker04" target="_blank">
+            <a
+              href="https://unsplash.com/@jacobasker04"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <UnsplashIcon className="icon has-hover" />
             </a>
           </div>

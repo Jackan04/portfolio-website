@@ -26,7 +26,7 @@ export default function Home() {
           experience. When I’m not at the keyboard, you’ll usually find me
           hiking with friends, lifting at the gym, or behind a camera. Take a
           look at some of my{" "}
-          <Link className="inline-link" to={"/projects"}>
+          <Link className="inline-link" to="/projects">
             projects
           </Link>
           .
@@ -34,7 +34,7 @@ export default function Home() {
       </div>
       <div className={styles.section}>
         <h2>Technical Experience</h2>
-        <ExperienceCards></ExperienceCards>
+        <ExperienceCards />
       </div>
     </div>
   );

@@ -26,40 +26,27 @@ export default function Gallery() {
   if (loading) {
     return (
       <div className={styles.loadingContainer}>
-        <SpinnerIcon className={styles.spinnerIcon}></SpinnerIcon>
+        <SpinnerIcon className={styles.spinnerIcon} />
       </div>
     );
   }
 
   return (
     <div className={styles.gallery}>
-      {images.map((image, index) => {
-        return (
-          <div key={index}>
-            <a
-              href={image.links.html}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={image.urls.regular}
-                loading="lazy"
-                alt={image.alt_description}
-              ></img>
-            </a>
-            <p className={styles.attribution}>
-              Photo by{" "}
-              <a href={image.user.links.html} target="_blank">
-                {image.user.name}
-              </a>{" "}
-              on{" "}
-              <a href="https://unsplash.com" target="_blank">
-                Unsplash
-              </a>
-            </p>
-          </div>
-        );
-      })}
+      {images.map((image) => (
+        <a
+          key={image.id}
+          href={image.links.html}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={image.urls.regular}
+            loading="lazy"
+            alt={image.alt_description}
+          />
+        </a>
+      ))}
     </div>
   );
 }

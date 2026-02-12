@@ -18,28 +18,29 @@ export default function Projects() {
           value={null}
           filter={filter}
           setFilter={setFilter}
-        ></FilterButton>
+        />
         <FilterButton
           label="Code"
           value="code"
           filter={filter}
           setFilter={setFilter}
-        ></FilterButton>
+        />
         <FilterButton
           label="Design"
           value="design"
           filter={filter}
           setFilter={setFilter}
-        ></FilterButton>
+        />
       </div>
       <ul className={styles.projectList}>
         {visibleProjects.map((item, index) => (
-          <li key={item.title || index}>
-            <Card
-              title={item.title}
-              description={item.description}
-              url={item.url}
-            />
+          <li key={index}>
+            <a href={item.url} target="_blank" rel="noopener noreferrer">
+              <div className={styles.card}>
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
+              </div>
+            </a>
           </li>
         ))}
       </ul>
@@ -55,16 +56,5 @@ function FilterButton({ label, value, filter, setFilter }) {
     >
       {label}
     </button>
-  );
-}
-
-function Card({ title, description, url }) {
-  return (
-    <a href={url} target="_blank">
-      <div className={styles.card}>
-        <h2>{title}</h2>
-        <p>{description}</p>
-      </div>
-    </a>
   );
 }

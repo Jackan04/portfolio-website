@@ -1,6 +1,13 @@
 const projects = [
   {
     category: "code",
+    url: "https://github.com/Jackan04/inventory-application",
+    title: "Inventory App",
+    description:
+      "Inventory management app built with Express.js and PostgreSQL. Manage categories and grocery items with full CRUD functionality.",
+  },
+  {
+    category: "code",
     url: "https://github.com/Jackan04/Blog-app",
     title: "Blog App",
     description:

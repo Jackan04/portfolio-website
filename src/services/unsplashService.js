@@ -1,10 +1,9 @@
 class UnsplashService {
   constructor() {
-    this.key = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
-    if (!this.key) {
-      console.warn("VITE_UNSPLASH_ACCESS_KEY is not defined");
+    this.url = import.meta.env.VITE_UNSPLASH_URL;
+    if (!this.url) {
+      console.warn("VITE_UNSPLASH_URL is not defined");
     }
-    this.url = `https://api.unsplash.com/users/jacobasker04/photos?client_id=${this.key}&per_page=30`;
   }
 
   async getAllImages() {

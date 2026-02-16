@@ -18,11 +18,11 @@
   padding-bottom: var(--spacing-lg);
 }
 
-button {
+.filterButton {
   background-color: var(--color-caption);
 }
 
-button.active {
+.filterButton.active {
   background-color: var(--color-accent);
 }
 

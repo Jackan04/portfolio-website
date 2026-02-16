@@ -52,7 +52,11 @@ function FilterButton({ label, value, filter, setFilter }) {
   return (
     <button
       onClick={() => setFilter(value)}
-      className={value === filter ? styles.active : ""}
+      className={
+        value === filter
+          ? `${styles.active} ${styles.filterButton}`
+          : styles.filterButton
+      }
     >
       {label}
     </button>

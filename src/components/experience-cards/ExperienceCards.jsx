@@ -17,7 +17,7 @@ export default function ExperienceCards() {
         label="JavaScript"
         url="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       />
-      <Card label="NodeJS" url="https://nodejs.org/docs/latest/api/" />
+      <Card label="NodeJS" url="https://nodejs.org/en" />
       <Card label="React" url="https://react.dev/" />
       <Card label="React Native" url="https://reactnative.dev/" />
       <Card label="Swift" url="https://developer.apple.com/swift/" />

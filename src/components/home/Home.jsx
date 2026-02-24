@@ -1,5 +1,5 @@
 import profileImage from "../../assets/images/profile.jpeg";
-import ExperienceCards from "../experience-cards/ExperienceCards.jsx";
+import ExperienceTable from "../experience-cards/ExperienceTable.jsx";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
       </div>
       <div className={styles.section}>
         <h2>Technical Experience</h2>
-        <ExperienceCards />
+        <ExperienceTable />
       </div>
     </div>
   );

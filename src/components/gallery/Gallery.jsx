@@ -6,7 +6,7 @@ import ArrowRightIcon from "../../assets/icons/arrow-right.svg?react";
 
 export default function Gallery() {
   const [images, setImages] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchImages = async () => {

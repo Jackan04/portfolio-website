@@ -23,17 +23,21 @@ img {
 
 .loadingContainer {
   display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
+  width: fit-content;
+  align-self: center;
+  gap: var(--spacing-sm);
   align-items: center;
+  background-color: var(--color-gray-light);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
 }
 
 .spinnerIcon {
   fill: var(--color-body);
-  width: 48px;
-  height: 48px;
+  width: var(--font-body);
+  height: var(--font-body);
   animation-name: spin;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   will-change: transform;

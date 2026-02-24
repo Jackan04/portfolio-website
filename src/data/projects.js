@@ -1,6 +1,13 @@
 const projects = [
   {
     category: "code",
+    url: "https://github.com/Jackan04/clubhouse?tab=readme-ov-file#screenshots",
+    title: "Clubhouse",
+    description:
+      "Built a members-only message dashboard to practice authentication, role-based access control and sessions. Used Express.js, EJS, Passport (local strategy), and PostgreSQL to manage users and messages. Visitors can read messages, signed-in members can see full post details, and admins can edit or delete content and manage users.",
+  },
+  {
+    category: "code",
     url: "https://github.com/Jackan04/inventory-application",
     title: "Inventory App",
     description:

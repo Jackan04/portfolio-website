@@ -21,9 +21,7 @@
   display: flex;
 }
 
-.copyright {
-  font-size: var(--font-caption);
-  color: var(--color-caption);
+.copyright {  color: var(--color-caption);
 }
 
 @media (max-width: 480px) {

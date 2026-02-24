@@ -10,9 +10,7 @@ export default function Footer() {
     <footer>
       <div className={`container ${styles.footer}`}>
         <div className={styles.leftContent}>
-          <p className={styles.copyright}>
-            Copyright &copy; Jacob Asker {year}
-          </p>
+          <p className={styles.copyright}>Jacob Asker &copy; {year}</p>
         </div>
         <div className={styles.rightContent}>
           <div className={styles.iconContainer}>

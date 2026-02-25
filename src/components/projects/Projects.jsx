@@ -1,6 +1,7 @@
 import styles from "./Projects.module.css";
 import allProjects from "../../data/projects";
 import { useState } from "react";
+import ArrowRightIcon from "../../assets/icons/arrow-right.svg?react";
 
 export default function Projects() {
   const [filter, setFilter] = useState(null);
@@ -11,7 +12,7 @@ export default function Projects() {
       : allProjects.filter((project) => project.category === filter);
 
   return (
-    <div className="content">
+    <>
       <div className={styles.filterButtons}>
         <FilterButton
           label="All"
@@ -35,16 +36,22 @@ export default function Projects() {
       <ul className={styles.projectList}>
         {visibleProjects.map((item, index) => (
           <li key={index}>
-            <a href={item.url} target="_blank" rel="noopener noreferrer">
-              <div className={styles.card}>
-                <h2>{item.title}</h2>
-                <p>{item.description}</p>
-              </div>
-            </a>
+            <div className={styles.card}>
+              <h2>{item.title}</h2>
+              <p>{item.description}</p>
+              <a
+                href={item.url}
+                className={`button ${styles.projectLinkButton}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Go to project
+              </a>
+            </div>
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 }
 

@@ -12,6 +12,15 @@
   gap: var(--spacing-sm);
 }
 
+.projectLinkButton {
+  margin-top: var(--spacing-sm);
+  background-color: transparent;
+  color: var(--color-body);
+  border: 1px solid var(--color-caption);
+  font-size: var(--font-caption);
+  padding: 4px 6px;
+}
+
 .filterButtons {
   display: flex;
   gap: var(--spacing-sm);
@@ -24,10 +33,4 @@
 
 .filterButton.active {
   background-color: var(--color-accent);
-}
-
-@media (hover: hover) {
-  .card:hover > h2 {
-    color: var(--color-accent);
-  }
 }

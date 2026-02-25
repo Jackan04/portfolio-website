@@ -4,49 +4,49 @@ const projects = [
     url: "https://github.com/Jackan04/clubhouse?tab=readme-ov-file#screenshots",
     title: "Clubhouse",
     description:
-      "Built a members-only message dashboard to practice authentication, role-based access control and sessions. Used Express.js, EJS, Passport (local strategy), and PostgreSQL to manage users and messages. Visitors can read messages, signed-in members can see full post details, and admins can edit or delete content and manage users.",
+      "A members-only message dashboard featuring role-based access. Visitors can read messages, while signed-in members and admins have permissions to interact with and manage content and users.",
   },
   {
     category: "code",
     url: "https://github.com/Jackan04/inventory-application",
     title: "Inventory App",
     description:
-      "Built a grocery inventory manager with MVC pattern to practice server-side rendering and database relationships. Used Express.js, PostgreSQL for storing categories and items, and EJS for the views to create dynamic, server rendered pages.",
+      "A grocery inventory manager designed to organize grocery items and categories through a simple interface, streamlining how users track their household stock.",
   },
   {
     category: "code",
     url: "https://github.com/Jackan04/Blog-app",
     title: "Blog App",
     description:
-      "Created a full-stack blogging app where you can write, edit, and delete posts. Built the backend with Express.js, used MongoDB to store the posts, and EJS for the frontend. I wanted to learn how NoSQL databases work and how to structure a simple content management system from scratch.",
+      "A full-stack blogging manager prototype that allows users to create, edit, and manage their own posts.",
   },
   {
     category: "code",
     url: "https://github.com/Jackan04/ShelfLife",
     title: "ShelfLife",
     description:
-      "Developed an iOS app to help people track groceries and avoid food waste. Built it with Swift and SwiftUI, using SwiftData to persist everything locally on the device. I got tired of throwing out expired food and wanted to learn native iOS development, so this project let me tackle both problems at once.",
+      "A mobile application designed to help users track their groceries and reduce food waste by keeping a close eye on expiration dates.",
   },
   {
     category: "code",
     url: "https://github.com/Jackan04/Ticky",
     title: "Task Manager",
     description:
-      "Made a personal task manager focused on simplicity and speed. Used React for the interface and Firebase for storing data. I was frustrated with overly complex todo apps and wanted something that just works without the clutter. Just tasks, lists, due dates, and notes.",
+      "A personal task manager focused on speed and simplicity. It provides a clutter-free way to manage tasks, lists, and due dates without unnecessary complexity.",
   },
   {
     category: "code",
     url: "https://github.com/Jackan04/MediaTracker?tab=readme-ov-file",
     title: "Media Tracker",
     description:
-      "Built a mobile app to track movies and shows I want to watch. Used React Native with Expo for cross-platform development, SQLite for local storage, and the TMDB API for all the media data. I kept forgetting what movies and shows people recommended, and I wanted to explore mobile development while solving a real problem I had.",
+      "A mobile app for managing movie and TV show watchlists. It allows users to discover new content, search for specific titles, and keep their content organized in one place.",
   },
   {
     category: "design",
     url: "https://www.linkedin.com/pulse/designcase-fÃ¶rbÃ¤ttring-av-sjÃ¤lvbetjÃ¤ningskassa-jacob-asker-hva4e/?trackingId=T%2BxvKZHHRFeXrygYROiDBg%3D%3D",
     title: "Redesign of Self-Checkout",
     description:
-      "Analyzed usability issues in a self-service checkout interface and proposed improvements. Observed users struggling with unclear buttons and confusing flows, then redesigned the screen to be more intuitive. I wanted to apply UX principles to a real-world interface.",
+      "I noticed people getting frustrated with self-checkout screens. I analyzed why the flow was so confusing and redesigned it to be much more intuitive.",
   },
 ];
 

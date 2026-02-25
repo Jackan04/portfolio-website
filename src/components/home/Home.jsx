@@ -4,7 +4,7 @@ import styles from "./Home.module.css";
 
 export default function Home() {
   return (
-    <div className="content">
+    <>
       <div className={styles.section}>
         <img
           src={profileImage}
@@ -30,6 +30,6 @@ export default function Home() {
         <h2>Technical Experience</h2>
         <ExperienceTable />
       </div>
-    </div>
+    </>
   );
 }

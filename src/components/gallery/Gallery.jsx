@@ -43,7 +43,7 @@ export default function Gallery() {
   }
 
   return (
-    <div className="content">
+    <>
       <div className={styles.gallery}>
         {images.map((image) => (
           <div key={image.id} className={styles.imageCard}>
@@ -91,6 +91,6 @@ export default function Gallery() {
         View Full Gallery on Unsplash
         <ArrowRightIcon className="icon" />
       </a>
-    </div>
+    </>
   );
 }

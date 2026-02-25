@@ -3,4 +3,8 @@ function getCurrentYear() {
   return date.getFullYear();
 }
 
-export { getCurrentYear };
+function capitalize(string) {
+  return string[0].toUpperCase() + string.slice(1);
+}
+
+export { getCurrentYear, capitalize };

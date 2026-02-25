@@ -1,15 +1,15 @@
 import styles from "./Projects.module.css";
-import allProjects from "../../data/projects";
+import { categories, projects } from "../../data/projects";
 import { useState } from "react";
-import ArrowRightIcon from "../../assets/icons/arrow-right.svg?react";
+import { capitalize } from "../../script";
 
 export default function Projects() {
   const [filter, setFilter] = useState(null);
 
   const visibleProjects =
     filter === null
-      ? allProjects
-      : allProjects.filter((project) => project.category === filter);
+      ? projects
+      : projects.filter((project) => project.category === filter);
 
   return (
     <>
@@ -20,18 +20,15 @@ export default function Projects() {
           filter={filter}
           setFilter={setFilter}
         />
-        <FilterButton
-          label="Code"
-          value="code"
-          filter={filter}
-          setFilter={setFilter}
-        />
-        <FilterButton
-          label="Design"
-          value="design"
-          filter={filter}
-          setFilter={setFilter}
-        />
+        {categories.map((category) => (
+          <FilterButton
+            key={category}
+            label={capitalize(category)}
+            value={category}
+            filter={filter}
+            setFilter={setFilter}
+          />
+        ))}
       </div>
       <ul className={styles.projectList}>
         {visibleProjects.map((item, index) => (

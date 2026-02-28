@@ -19,6 +19,12 @@ export default function Header() {
             <li>
               <CustomNavLink to="/photography" label="Photos" />
             </li>
+            <li>
+              <CustomNavLink
+                to="mailto:jacob.asker@icloud.con"
+                label="Contact"
+              />
+            </li>
           </ul>
         </nav>
       </div>

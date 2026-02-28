@@ -3,7 +3,14 @@ const categories = ["web", "mobile", "design"];
 const projects = [
   {
     category: categories[0],
-    url: "https://github.com/Jackan04/clubhouse?tab=readme-ov-file#screenshots",
+    url: "https://github.com/Jackan04/file-uploader",
+    title: "File Uploader",
+    description:
+      "A full-stack web application designed for personal file storage and organization. The service allows users to upload, manage, and download files within their personal drive, similar to cloud storage platforms like Google Drive.",
+  },
+  {
+    category: categories[0],
+    url: "https://github.com/Jackan04/clubhouse",
     title: "Clubhouse",
     description:
       "A members-only message dashboard featuring role-based access. Visitors can read messages, while signed-in members and admins have permissions to interact with and manage content and users.",

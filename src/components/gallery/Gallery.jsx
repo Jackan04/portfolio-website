@@ -58,26 +58,6 @@ export default function Gallery() {
                 alt={image.alt_description}
               />
             </a>
-            <p className={styles.attribution}>
-              Photo by{" "}
-              <a
-                href={image.user.links.html}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="has-hover"
-              >
-                {image.user.name}
-              </a>{" "}
-              on{" "}
-              <a
-                href="https://unsplash.com/"
-                className="has-hover"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Unsplash
-              </a>{" "}
-            </p>
           </div>
         ))}
       </div>

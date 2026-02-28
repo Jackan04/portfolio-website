@@ -25,6 +25,13 @@ export default function Home() {
           experience. When I’m not at the keyboard, you’ll usually find me
           hiking with friends, lifting at the gym, or behind a camera.
         </p>
+        <p>
+          I’m always open to new opportunities. Feel free to{" "}
+          <a className="inline-link" href="mailto:jacob.asker@icloud.com">
+            get in touch
+          </a>
+          .
+        </p>
       </div>
       <div className={styles.section}>
         <h2>Technical Experience</h2>

@@ -107,6 +107,11 @@ a {
   color: var(--color-body);
 }
 
+.inline-link {
+  color: var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
+}
+
 ul {
   list-style: none;
 }

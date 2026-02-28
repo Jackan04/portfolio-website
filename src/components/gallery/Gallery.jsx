@@ -53,7 +53,7 @@ export default function Gallery() {
               rel="noopener noreferrer"
             >
               <img
-                src={image.urls.regular}
+                src={image.urls.small}
                 loading="lazy"
                 alt={image.alt_description}
               />

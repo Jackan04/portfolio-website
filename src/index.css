@@ -109,7 +109,10 @@ a {
 
 .inline-link {
   color: var(--color-accent);
-  border-bottom: 1px solid var(--color-accent);
+}
+
+.inline-link:hover {
+  border-bottom: 2px solid var(--color-accent);
 }
 
 ul {

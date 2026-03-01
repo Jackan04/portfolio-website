@@ -3,6 +3,7 @@ import { getCurrentYear } from "../../script";
 import GitHubIcon from "../../assets/icons/github.svg?react";
 import LinkedInIcon from "../../assets/icons/linkedin.svg?react";
 import UnsplashIcon from "../../assets/icons/unsplash.svg?react";
+import Link from "../Link.jsx";
 
 export default function Footer() {
   const year = getCurrentYear();
@@ -14,31 +15,22 @@ export default function Footer() {
         </div>
         <div className={styles.rightContent}>
           <div className={styles.iconContainer}>
-            <a
-              href="https://github.com/Jackan04?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="https://github.com/Jackan04?tab=repositories" external>
               <GitHubIcon className="icon has-hover" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/jacob-asker-a096a7352/"
-              target="_blank"
-              rel="noopener noreferrer"
+              external
             >
               <LinkedInIcon className="icon has-hover" />
-            </a>
-            <a
-              href="https://unsplash.com/@jacobasker04"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            </Link>
+            <Link href="https://unsplash.com/@jacobasker04" external>
               <UnsplashIcon className="icon has-hover" />
-            </a>
+            </Link>
           </div>
-          <a className="button" href="mailto:jacob.asker@icloud.com">
+          <Link className="button" href="mailto:jacob.asker@icloud.com">
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

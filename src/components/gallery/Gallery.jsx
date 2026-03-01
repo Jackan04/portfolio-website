@@ -3,6 +3,7 @@ import styles from "./Gallery.module.css";
 import UnsplashService from "../../services/unsplashService.js";
 import SpinnerIcon from "../../assets/icons/spinner.svg?react";
 import ArrowRightIcon from "../../assets/icons/arrow-right.svg?react";
+import Link from "../Link.jsx";
 
 export default function Gallery() {
   const [images, setImages] = useState([]);
@@ -47,30 +48,25 @@ export default function Gallery() {
       <div className={styles.gallery}>
         {images.map((image) => (
           <div key={image.id} className={styles.imageCard}>
-            <a
-              href={image.links.html}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href={image.links.html} external>
               <img
                 src={image.urls.small}
                 loading="lazy"
                 alt={image.alt_description}
               />
-            </a>
+            </Link>
           </div>
         ))}
       </div>
 
-      <a
+      <Link
         href="https://unsplash.com/@jacobasker04"
-        target="_blank"
-        rel="noopener noreferrer"
+        external
         className={`has-hover ${styles.unsplashRedirect}`}
       >
         View Full Gallery on Unsplash
         <ArrowRightIcon className="icon" />
-      </a>
+      </Link>
     </>
   );
 }

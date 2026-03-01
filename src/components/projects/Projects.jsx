@@ -2,6 +2,7 @@ import styles from "./Projects.module.css";
 import { categories, projects } from "../../data/projects";
 import { useState } from "react";
 import { capitalize } from "../../script";
+import Link from "../Link.jsx";
 
 export default function Projects() {
   const [filter, setFilter] = useState(null);
@@ -36,14 +37,13 @@ export default function Projects() {
             <div className={styles.card}>
               <h2>{item.title}</h2>
               <p>{item.description}</p>
-              <a
+              <Link
                 href={item.url}
                 className={`button ${styles.projectLinkButton}`}
-                target="_blank"
-                rel="noopener noreferrer"
+                external
               >
                 Go to project
-              </a>
+              </Link>
             </div>
           </li>
         ))}

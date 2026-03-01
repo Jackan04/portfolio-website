@@ -1,6 +1,7 @@
 import profileImage from "../../assets/images/profile.jpeg";
 import ExperienceTable from "../experience-cards/ExperienceTable.jsx";
 import styles from "./Home.module.css";
+import Link from "../Link.jsx";
 
 export default function Home() {
   return (
@@ -27,9 +28,9 @@ export default function Home() {
         </p>
         <p>
           I’m always open to new opportunities. Feel free to{" "}
-          <a className="inline-link" href="mailto:jacob.asker@icloud.com">
+          <Link className="inline-link" href="mailto:jacob.asker@icloud.com">
             get in touch
-          </a>
+          </Link>
           .
         </p>
       </div>

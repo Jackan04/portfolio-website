@@ -1,3 +1,5 @@
+import Link from "./Link.jsx";
+
 export default function NotFound() {
   return (
     <>
@@ -6,9 +8,9 @@ export default function NotFound() {
         The page you're looking for seems to have wandered off. Don't worry, it
         happens to the best of us!
       </p>
-      <a href="/" className="button">
+      <Link href="/" className="button">
         Take Me Home
-      </a>
+      </Link>
     </>
   );
 }

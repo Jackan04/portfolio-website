@@ -15,16 +15,16 @@ export default function Footer() {
         </div>
         <div className={styles.rightContent}>
           <div className={styles.iconContainer}>
-            <Link href="https://github.com/Jackan04?tab=repositories" external>
+            <Link href="https://github.com/Jackan04?tab=repositories">
               <GitHubIcon className="icon has-hover" />
             </Link>
             <Link
               href="https://www.linkedin.com/in/jacob-asker-a096a7352/"
-              external
+              
             >
               <LinkedInIcon className="icon has-hover" />
             </Link>
-            <Link href="https://unsplash.com/@jacobasker04" external>
+            <Link href="https://unsplash.com/@jacobasker04" >
               <UnsplashIcon className="icon has-hover" />
             </Link>
           </div>

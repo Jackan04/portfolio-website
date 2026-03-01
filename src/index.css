@@ -129,6 +129,16 @@ button,
   width: fit-content;
 }
 
+button.small,
+.button.small {
+  margin-top: var(--spacing-sm);
+  background-color: transparent;
+  color: var(--color-body);
+  border: 1px solid var(--color-caption);
+  font-size: var(--font-caption);
+  padding: 4px 6px;
+}
+
 .icon {
   fill: var(--color-body);
   width: 24px;

@@ -45,10 +45,25 @@ export default function Gallery() {
 
   return (
     <>
+      <details>
+        <summary>About the photos</summary>
+        <p>
+          Photography is a big passion outside of coding. The images below are
+          from my Unsplash collection, click any photo to view it on Unsplash,
+          or visit{" "}
+          <Link
+            className="inline-link"
+            href="https://unsplash.com/@jacobasker04"
+          >
+            my full collection
+          </Link>{" "}
+          to see more.
+        </p>
+      </details>
       <div className={styles.gallery}>
         {images.map((image) => (
           <div key={image.id} className={styles.imageCard}>
-            <Link href={image.links.html} >
+            <Link href={image.links.html}>
               <img
                 src={image.urls.small}
                 loading="lazy"
@@ -61,7 +76,6 @@ export default function Gallery() {
 
       <Link
         href="https://unsplash.com/@jacobasker04"
-        
         className={`has-hover ${styles.unsplashRedirect}`}
       >
         View Full Gallery on Unsplash

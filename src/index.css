@@ -115,6 +115,26 @@ ul {
   list-style: none;
 }
 
+details {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+}
+
+summary {
+  color: var(--color-heading);
+  font-size: var(--font-body);
+  font-weight: var(--weight-semi);
+}
+
+details p {
+  margin-top: var(--spacing-md);
+}
+
+summary::marker {
+  color: var(--color-body);
+}
+
 button,
 .button {
   border: none;
@@ -174,6 +194,11 @@ button.small,
 
   .inline-link:hover {
     border-bottom: 2px solid var(--color-accent);
+  }
+
+  details:not([open]):hover {
+    cursor: pointer;
+    background-color: var(--color-gray-light);
   }
 }
 

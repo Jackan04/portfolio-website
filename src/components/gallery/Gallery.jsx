@@ -4,6 +4,7 @@ import UnsplashService from "../../services/unsplashService.js";
 import SpinnerIcon from "../../assets/icons/spinner.svg?react";
 import ArrowRightIcon from "../../assets/icons/arrow-right.svg?react";
 import Link from "../Link.jsx";
+import Accordion from "../Accordion.jsx";
 
 export default function Gallery() {
   const [images, setImages] = useState([]);
@@ -45,8 +46,7 @@ export default function Gallery() {
 
   return (
     <>
-      <details>
-        <summary>About the photos</summary>
+      <Accordion summary="About the photos">
         <p>
           Photography is a big passion outside of coding. The images below are
           from my Unsplash collection, click any photo to view it on Unsplash,
@@ -59,7 +59,7 @@ export default function Gallery() {
           </Link>{" "}
           to see more.
         </p>
-      </details>
+      </Accordion>
       <div className={styles.gallery}>
         {images.map((image) => (
           <div key={image.id} className={styles.imageCard}>

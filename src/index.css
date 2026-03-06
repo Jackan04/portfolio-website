@@ -152,7 +152,7 @@ button.small,
 .filterButton.active {
   border-color: var(--color-accent);
   background-color: var(--color-accent);
-  color: var(--color-background);
+  color: white;
 }
 
 .filterButtons {
@@ -188,14 +188,10 @@ button.small,
     opacity: 0.8;
   }
 
-  .filterButton:hover {
+  .filterButton:not(.active):hover {
     opacity: 1;
     border-color: var(--color-accent);
     color: var(--color-accent);
-  }
-
-  .filterButton.active:hover {
-    color: var(--color-background);
   }
 
   .has-hover:hover,

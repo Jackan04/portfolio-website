@@ -17,7 +17,14 @@ export default function ExperienceTable() {
               <td>
                 <strong>{item.category}</strong>
               </td>
-              <td>{item.toolset}</td>
+              <td>
+                {item.toolset.map((tool, index) => (
+                  <span key={tool}>
+                    {tool}
+                    {index < item.toolset.length - 1 ? ", " : ""}
+                  </span>
+                ))}
+              </td>
             </tr>
           ))}
         </tbody>

@@ -1,18 +1,19 @@
 const experiences = [
   {
-    category: "Frontend",
-    toolset: ["React", "JavaScript", "HTML", "CSS"],
-  },
-  {
     category: "Backend",
     toolset: [
       "Node.js",
       "Express.js",
       "REST APIs",
+      "Prisma ORM",
       "Passport.js",
       "C# .NET",
       "EJS",
     ],
+  },
+  {
+    category: "Frontend",
+    toolset: ["React", "JavaScript", "HTML", "CSS"],
   },
   {
     category: "Mobile",
@@ -20,13 +21,7 @@ const experiences = [
   },
   {
     category: "Data",
-    toolset: [
-      "PostgreSQL",
-      "Prisma ORM",
-      "MongoDB",
-      "SQLite",
-      "Firebase Firestore",
-    ],
+    toolset: ["PostgreSQL", "MongoDB", "SQLite", "Firebase Firestore"],
   },
   {
     category: "UX Design",

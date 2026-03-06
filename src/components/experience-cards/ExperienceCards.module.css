@@ -1,0 +1,68 @@
+.experienceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.categoryCard {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-background);
+  padding: var(--spacing-md);
+}
+
+.cardTitle {
+  font-size: var(--font-body);
+  color: var(--color-heading);
+  font-weight: var(--weight-bold);
+}
+
+.toolList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.toolCard {
+  display: inline-flex;
+  background-color: var(--color-gray-light);
+  color: var(--color-body);
+  font-size: var(--font-caption);
+  padding: calc(var(--spacing-sm) * 0.5) var(--spacing-sm);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+}
+
+.active {
+  opacity: 1;
+}
+
+.dimmed {
+  opacity: 0.4;
+}
+
+@media (max-width: 480px) {
+  .dimmed {
+    display: none;
+  }
+
+  .categoryCard {
+    max-width: none;
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .cardGrid {
+    gap: 0;
+  }
+}

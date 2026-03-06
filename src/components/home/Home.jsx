@@ -1,5 +1,5 @@
 import profileImage from "../../assets/images/profile.webp";
-import ExperienceTable from "../experience-cards/ExperienceTable.jsx";
+import ExperienceCards from "../experience-cards/ExperienceCards.jsx";
 import styles from "./Home.module.css";
 import Link from "../Link.jsx";
 
@@ -46,7 +46,7 @@ export default function Home() {
 
       <section>
         <h2>Technical Experience</h2>
-        <ExperienceTable />
+        <ExperienceCards />
       </section>
     </>
   );

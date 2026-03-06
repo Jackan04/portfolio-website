@@ -13,17 +13,3 @@
   flex-direction: column;
   gap: var(--spacing-sm);
 }
-
-.filterButtons {
-  display: flex;
-  gap: var(--spacing-sm);
-  padding-bottom: var(--spacing-lg);
-}
-
-.filterButton:not(.active) {
-  background-color: var(--color-caption);
-}
-
-.filterButton.active {
-  background-color: var(--color-accent);
-}

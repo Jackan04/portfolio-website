@@ -14,7 +14,7 @@ export default function Projects() {
 
   return (
     <>
-      <div className={styles.filterButtons}>
+      <div className="filterButtons">
         <FilterButton
           label="All"
           value={null}
@@ -52,11 +52,7 @@ function FilterButton({ label, value, filter, setFilter }) {
   return (
     <button
       onClick={() => setFilter(value)}
-      className={
-        value === filter
-          ? `${styles.active} ${styles.filterButton}`
-          : styles.filterButton
-      }
+      className={value === filter ? "filterButton active" : "filterButton"}
     >
       {label}
     </button>

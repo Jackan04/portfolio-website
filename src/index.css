@@ -25,6 +25,7 @@
   --weight-bold: 600;
 
   --border-radius: 8px;
+  --border-radius-full: 999px;
 
   /* Spacing Scale */
   --spacing-sm: 0.5rem;
@@ -138,6 +139,28 @@ button.small,
   padding: 4px 6px;
 }
 
+.filterButton {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+  color: var(--color-caption);
+  padding: calc(var(--spacing-sm) * 0.75) var(--spacing-md);
+  border-radius: var(--border-radius-full);
+  font-size: var(--font-caption);
+  font-weight: var(--weight-semi);
+}
+
+.filterButton.active {
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-background);
+}
+
+.filterButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
 .icon {
   fill: var(--color-body);
   width: 24px;
@@ -163,6 +186,16 @@ button.small,
   .button:hover {
     cursor: pointer;
     opacity: 0.8;
+  }
+
+  .filterButton:hover {
+    opacity: 1;
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  .filterButton.active:hover {
+    color: var(--color-background);
   }
 
   .has-hover:hover,

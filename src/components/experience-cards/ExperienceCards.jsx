@@ -3,43 +3,41 @@ import experiences from "../../data/experiences.js";
 import { useState } from "react";
 
 export default function ExperienceCards() {
-  const [activeExperience, setActiveExperience] = useState(experiences[0]);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={styles.experienceContainer}>
-      <div className="filterButtons">
-        {experiences.map((experience) => (
-          <button
-            key={experience.category}
-            className={`filterButton ${activeExperience === experience ? "active" : ""}`}
-            onClick={() => setActiveExperience(experience)}
-          >
-            {experience.category}
+    <div className={styles.container}>
+      {experiences.map((item) => (
+        <div className={styles.card}>
+          <h3 className={styles.title}>{item.category}</h3>
+          <p>{item.description}</p>
+          <button onClick={() => setIsOpen(item.category)} className="small">
+            Open
           </button>
+          <Dialog item={item} isOpen={isOpen} setIsOpen={setIsOpen} />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function Dialog({ item, isOpen, setIsOpen }) {
+  return (
+    <dialog open={isOpen === item.category}>
+      <header>
+        <h3 className={styles.title}>{item.category}</h3>
+      </header>
+      <div className={`dialog-content ${styles.toolList}`}>
+        {item.toolset.map((tool) => (
+          <div className={styles.label}>
+            <p>{tool}</p>
+          </div>
         ))}
       </div>
 
-      <ul className={styles.cardGrid}>
-        {experiences.map((experience) => {
-          const isActive = activeExperience === experience;
-
-          return (
-            <li
-              key={experience.category}
-              className={`${styles.categoryCard} ${isActive ? styles.active : styles.dimmed}`}
-            >
-              <h3 className={styles.cardTitle}>{experience.category}</h3>
-              <div className={styles.toolList}>
-                {experience.toolset.map((tool) => (
-                  <span key={tool} className={styles.toolCard}>
-                    {tool}
-                  </span>
-                ))}
-              </div>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+      <footer>
+        <button className="outline" onClick={() => setIsOpen(false)}>Close</button>
+      </footer>
+    </dialog>
   );
 }

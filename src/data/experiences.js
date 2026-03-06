@@ -23,10 +23,6 @@ const experiences = [
     category: "Data",
     toolset: ["PostgreSQL", "MongoDB", "SQLite", "Firebase Firestore"],
   },
-  {
-    category: "UX Design",
-    toolset: ["Figma", "Sketch"],
-  },
 ];
 
 export default experiences;

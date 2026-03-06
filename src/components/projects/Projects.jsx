@@ -36,7 +36,7 @@ export default function Projects() {
           <li key={index}>
             <div className={styles.card}>
               <h2>{item.title}</h2>
-              <p>{item.description}</p>
+              <p className={styles.description}>{item.description}</p>
               <Link href={item.url} className={`button small`}>
                 Go to project
               </Link>

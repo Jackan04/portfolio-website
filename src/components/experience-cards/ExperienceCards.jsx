@@ -10,8 +10,11 @@ export default function ExperienceCards() {
       {experiences.map((item) => (
         <div className={styles.card}>
           <h3 className={styles.title}>{item.category}</h3>
-          <p>{item.description}</p>
-          <button onClick={() => setIsOpen(item.category)} className="small">
+          <p className={styles.description}>{item.description}</p>
+          <button
+            onClick={() => setIsOpen(item.category)}
+            className={`small ${styles.openDialogButton}`}
+          >
             Open
           </button>
           <Dialog item={item} isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -26,6 +29,9 @@ function Dialog({ item, isOpen, setIsOpen }) {
     <dialog open={isOpen === item.category}>
       <header>
         <h3 className={styles.title}>{item.category}</h3>
+        <p>
+          I have hands-on experience with the following tools and technologies.
+        </p>
       </header>
       <div className={`dialog-content ${styles.toolList}`}>
         {item.toolset.map((tool) => (
@@ -36,7 +42,7 @@ function Dialog({ item, isOpen, setIsOpen }) {
       </div>
 
       <footer>
-        <button className="outline" onClick={() => setIsOpen(false)}>Close</button>
+        <button onClick={() => setIsOpen(false)}>Close</button>
       </footer>
     </dialog>
   );

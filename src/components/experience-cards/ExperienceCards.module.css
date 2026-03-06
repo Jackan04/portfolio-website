@@ -1,17 +1,23 @@
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--spacing-md);
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
   border: 1px solid var(--color-border);
   padding: var(--spacing-md);
+  padding-bottom: 3.5rem;
   max-width: 340px;
   border-radius: var(--border-radius);
+}
+
+.description {
+  color: var(--color-caption);
 }
 
 .toolList {
@@ -25,4 +31,16 @@
   background-color: var(--color-gray-light);
   padding: calc(var(--spacing-sm) * 0.5) var(--spacing-sm);
   border-radius: var(--border-radius);
+}
+
+.openDialogButton {
+  position: absolute;
+  left: var(--spacing-md);
+  bottom: var(--spacing-md);
+}
+
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
 }

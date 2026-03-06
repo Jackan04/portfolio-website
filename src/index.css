@@ -17,6 +17,7 @@
 
   /* Font Sizes */
   --font-heading: 1.5rem;
+  --font-subheading: 1.15rem;
   --font-body: 1rem;
   --font-caption: 0.875rem;
 
@@ -100,6 +101,8 @@ h2 {
 
 h3 {
   color: var(--color-heading);
+  font-size: var(--font-subheading);
+  font-weight: var(--weight-semi);
 }
 
 .caption {
@@ -131,13 +134,6 @@ button,
   font-size: var(--font-body);
   font-weight: var(--weight-semi);
   width: fit-content;
-}
-
-button.outline,
-.button.outline {
-  color: var(--color-body);
-  background-color: transparent;
-  border: 1px solid var(--color-border);
 }
 
 button.small,
@@ -179,12 +175,12 @@ button.small,
 }
 
 dialog {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   width: 100%;
-  max-width: 500px;
+  max-width: min(500px, 90%);
   position: fixed;
   top: 50%;
   left: 50%;
-  margin: 0;
   transform: translate(-50%, -50%);
   z-index: 9999;
   background-color: var(--color-background);
@@ -192,6 +188,12 @@ dialog {
   border: none;
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
+}
+
+dialog header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
 }
 
 .dialog-content {
@@ -204,19 +206,10 @@ dialog[open] {
   gap: var(--spacing-md);
 }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 100;
-  }
-}
-
 @media (max-width: 480px) {
   :root {
     --font-heading: 1.25rem;
+    --font-subheading: 1.1rem;
     --font-body: 1rem;
     --font-caption: 0.875rem;
 

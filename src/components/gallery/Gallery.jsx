@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import styles from "./Gallery.module.css";
 import UnsplashService from "../../services/unsplashService.js";
 import SpinnerIcon from "../../assets/icons/spinner.svg?react";
-import ArrowRightIcon from "../../assets/icons/arrow-right.svg?react";
 import Link from "../Link.jsx";
 import Accordion from "../Accordion.jsx";
 
@@ -77,10 +76,9 @@ export default function Gallery() {
 
       <Link
         href="https://unsplash.com/@jacobasker04"
-        className={`${styles.unsplashRedirect} hover-accent`}
+        className={`${styles.unsplashRedirect} button outline hover-accent`}
       >
         View Full Gallery on Unsplash
-        <ArrowRightIcon className="icon hover-accent" />
       </Link>
     </>
   );

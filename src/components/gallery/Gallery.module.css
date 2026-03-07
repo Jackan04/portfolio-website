@@ -46,11 +46,7 @@ img {
 }
 
 .unsplashRedirect {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: var(--spacing-lg);
-  gap: var(--spacing-sm);
+  align-self: center;
 }
 
 @keyframes spin {

@@ -1,4 +1,4 @@
-import Link from "./Link.jsx";
+import { NavLink } from "react-router-dom";
 
 export default function NotFound() {
   return (
@@ -8,9 +8,9 @@ export default function NotFound() {
         The page you're looking for seems to have wandered off. Don't worry, it
         happens to the best of us!
       </p>
-      <Link href="/" className="button">
+      <NavLink to="/" className="button default">
         Take Me Home
-      </Link>
+      </NavLink>
     </>
   );
 }

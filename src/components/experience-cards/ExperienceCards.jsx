@@ -14,7 +14,7 @@ export default function ExperienceCards() {
           <p className={styles.description}>{item.description}</p>
           <button
             onClick={() => setIsOpen(item.category)}
-            className={`small ${styles.openDialogButton}`}
+            className={`small outline ${styles.openDialogButton}`}
           >
             Read more
           </button>

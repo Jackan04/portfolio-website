@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header>
       <div className={`container ${styles.header}`}>
-        <Link to="/" className={`${styles.logo} has-hover`}>
+        <Link to="/" className={styles.logo}>
           Jacob
         </Link>
         <nav>
@@ -31,9 +31,7 @@ function CustomNavLink({ to, label }) {
     <NavLink
       to={to}
       className={({ isActive }) =>
-        isActive
-          ? `${styles.navLink} ${styles.active} has-hover`
-          : `${styles.navLink} has-hover`
+        isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
       }
     >
       {label}

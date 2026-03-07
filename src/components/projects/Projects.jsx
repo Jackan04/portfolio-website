@@ -37,7 +37,7 @@ export default function Projects() {
             <div className={styles.card}>
               <h2>{item.title}</h2>
               <p className={styles.description}>{item.description}</p>
-              <Link href={item.url} className={`button small`}>
+              <Link href={item.url} className={`button small outline`}>
                 Go to project
               </Link>
             </div>

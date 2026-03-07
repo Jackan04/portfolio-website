@@ -75,7 +75,7 @@ export default function Gallery() {
 
       <Link
         href="https://unsplash.com/@jacobasker04"
-        className={`has-hover ${styles.unsplashRedirect}`}
+        className={styles.unsplashRedirect}
       >
         View Full Gallery on Unsplash
         <ArrowRightIcon className="icon" />

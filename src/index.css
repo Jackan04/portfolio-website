@@ -17,10 +17,10 @@
   --color-gray-light: #f2f5f7;
 
   /* Font Sizes */
-  --font-heading: 1.5rem;
-  --font-subheading: 1.15rem;
-  --font-body: 1rem;
-  --font-caption: 0.875rem;
+  --font-heading: clamp(1.125rem, 1.05rem + 0.36vw, 1.375rem);
+  --font-subheading: clamp(1rem, 0.98rem + 0.09vw, 1.0625rem);
+  --font-body: clamp(0.9375rem, 0.92rem + 0.09vw, 1rem);
+  --font-caption: clamp(0.75rem, 0.73rem + 0.09vw, 0.8125rem);
 
   /* Font Weights */
   --weight-semi: 500;
@@ -231,11 +231,6 @@ dialog[open] {
 
 @media (max-width: 480px) {
   :root {
-    --font-heading: 1.25rem;
-    --font-subheading: 1.1rem;
-    --font-body: 1rem;
-    --font-caption: 0.875rem;
-
     --spacing-sm: 0.5rem;
     --spacing-md: 0.75rem;
     --spacing-lg: 1.25rem;

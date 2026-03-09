@@ -8,12 +8,14 @@ import Accordion from "../Accordion.jsx";
 export default function Gallery() {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [hasMore, setHasMore] = useState(true);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     const fetchImages = async () => {
       setLoading(true);
       try {
-        const data = await UnsplashService.getAllImages();
+        const data = await UnsplashService.getAllImages(1);
         setImages(data);
       } catch (err) {
         setImages([]);
@@ -27,6 +29,18 @@ export default function Gallery() {
 
     fetchImages();
   }, []);
+
+  async function handleLoadMore() {
+    const nextPage = page + 1;
+    const newImages = await UnsplashService.getAllImages(nextPage);
+
+    if (newImages.length === 0 || newImages.length < 12) {
+      setHasMore(false);
+    }
+
+    setImages((prev) => [...prev, ...newImages]);
+    setPage(nextPage);
+  }
 
   if (loading) {
     return (
@@ -74,12 +88,15 @@ export default function Gallery() {
         ))}
       </div>
 
-      <Link
-        href="https://unsplash.com/@jacobasker04"
-        className={`${styles.unsplashRedirect} button outline hover-accent`}
-      >
-        View full gallery on Unsplash
-      </Link>
+      {hasMore && (
+        <button
+          disabled={!hasMore}
+          onClick={handleLoadMore}
+          className={`outline hover-accent ${styles.loadMoreButton}`}
+        >
+          Load More
+        </button>
+      )}
     </>
   );
 }

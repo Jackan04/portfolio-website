@@ -1,6 +1,7 @@
 class UnsplashService {
   constructor() {
-    this.url = import.meta.env.VITE_UNSPLASH_URL;
+    this.key = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
+    this.url = `https://api.unsplash.com/users/jacobasker04/photos?client_id=${this.key}&per_page=12`;
   }
 
   async getAllImages(page) {

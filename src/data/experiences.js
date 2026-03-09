@@ -37,6 +37,13 @@ const experiences = [
       "I've worked with both relational and non-relational databases and try to pick the right tool for the job. I'm comfortable with schema design, querying, and integrating databases into the rest of an application.",
     toolset: ["PostgreSQL", "MongoDB", "SQLite", "Firebase Firestore"],
   },
+  {
+    category: "Design",
+    description: "Read about my experience designing digital interfaces.",
+    details:
+      "Design isn't my primary focus, but it's something I care a lot about. Whenever I build a project, I invest time into thinking through the flow, feel, and visual coherence of the product before writing a line of code. In practice that means gathering inspiration, defining the structure, and working through mockups in Figma or Sketch before moving into implementation.",
+    toolset: ["Figma", "Sketch"],
+  },
 ];
 
 export default experiences;

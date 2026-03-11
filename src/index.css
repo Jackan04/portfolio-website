@@ -160,7 +160,7 @@ button.outline,
 
 button.transparent,
 .button.transparent {
-  padding: 0;
+  padding: var(--spacing-sm);
   margin: 0;
   background-color: transparent;
 }
@@ -255,13 +255,21 @@ body:has(dialog[open]) {
 }
 
 @media (hover: hover) {
+  .hover-accent:hover,
+  .hover-background:hover,
+  .hover-opacity:hover {
+    cursor: pointer;
+  }
   .hover-opacity:hover {
     opacity: 0.8;
-    cursor: pointer;
+  }
+
+  .hover-background:hover {
+    background-color: var(--color-gray-light);
+    border-radius: var(--border-radius);
   }
 
   .hover-accent:hover {
-    cursor: pointer;
     color: var(--color-accent);
     border-color: var(--color-accent);
   }

@@ -32,10 +32,10 @@ function Dialog({ item, isOpen, setIsOpen }) {
         <h2 className={styles.title}>{item.category}</h2>
         <button
           aria-label={`Close ${item.category} details`}
-          className="transparent hover-accent closeDialogButton"
+          className="transparent hover-background closeDialogButton"
           onClick={() => setIsOpen(false)}
         >
-          <XMarkIcon className="icon hover-accent" />
+          <XMarkIcon className="icon" />
         </button>
       </header>
       <div className="dialog-section">

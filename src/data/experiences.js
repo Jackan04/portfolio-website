@@ -41,8 +41,8 @@ const experiences = [
     category: "Testing",
     description: "Read about my experience writing automated tests.",
     details:
-      "I have some hands-on experience with automated testing across different environments. I've written tests using Jest in JavaScript projects, xUnit in C#, and Swift Testing for iOS. I understand the fundamentals and work comfortably in codebases that use them.",
-    toolset: ["Jest", "xUnit", "Swift Testing"],
+      "I have foundational experience with automated testing across different environments. I've written basic test suites with Jest in JavaScript projects, used SuperTest for testing Express routes and controllers, xUnit in C#, and Swift Testing for iOS.",
+    toolset: ["Jest", "SuperTest", "xUnit", "Swift Testing"],
   },
   {
     category: "Design",

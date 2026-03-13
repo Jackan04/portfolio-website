@@ -177,8 +177,9 @@ button.outline,
 
 button.transparent,
 .button.transparent {
-    padding: var(--spacing-sm);
     background-color: transparent;
+    color: var(--color-body);
+    padding: var(--spacing-sm);
 }
 
 .filterButton {

@@ -46,6 +46,7 @@
     --border-radius-full: 999px;
 
     /* Spacing Scale */
+    --spacing-xs: 0.25rem;
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
     --spacing-lg: 1.5rem;
@@ -164,7 +165,7 @@ button.small,
 .button.small {
     margin-top: var(--spacing-sm);
     font-size: var(--font-caption);
-    padding: 4px 6px;
+    padding: var(--spacing-xs) var(--spacing-sm);
 }
 
 button.outline,
@@ -177,7 +178,6 @@ button.outline,
 button.transparent,
 .button.transparent {
     padding: var(--spacing-sm);
-    margin: 0;
     background-color: transparent;
 }
 

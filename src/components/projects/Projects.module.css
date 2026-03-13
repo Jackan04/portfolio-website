@@ -1,15 +1,15 @@
 .projectList {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
 }
 
 .card {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 200px;
-  border-left: 5px solid var(--color-accent);
-  padding-left: var(--spacing-lg);
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
+    content-visibility: auto;
+    contain-intrinsic-size: auto 200px;
+    border-left: 5px solid var(--color-accent);
+    padding-left: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
 }

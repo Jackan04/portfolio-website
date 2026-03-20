@@ -108,6 +108,7 @@ p {
   font-size: var(--font-body);
   line-height: var(--lh-relaxed);
   color: var(--color-body);
+  white-space: pre-wrap;
 }
 
 .body-secondary {

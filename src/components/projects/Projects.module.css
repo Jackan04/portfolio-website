@@ -3,3 +3,9 @@
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-md);
 }
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

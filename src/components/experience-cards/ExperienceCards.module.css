@@ -17,3 +17,9 @@
   padding: calc(var(--spacing-sm) * 0.5) var(--spacing-sm);
   border-radius: var(--border-radius);
 }
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

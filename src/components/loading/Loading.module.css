@@ -19,3 +19,13 @@
   animation-timing-function: linear;
   will-change: transform;
 }
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

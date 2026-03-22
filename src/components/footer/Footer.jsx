@@ -8,7 +8,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer>
-      <div className={`container ${styles.footer}`}>
+      <div className={styles.footer}>
         <div className={styles.leftContent}>
           <p className="body-secondary">Jacob Asker &copy; {year}</p>
         </div>

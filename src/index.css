@@ -83,25 +83,18 @@ body {
 
 .app {
   min-height: 100dvh;
+  max-width: 800px;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: var(--spacing-xxl);
   padding: var(--spacing-lg);
 }
 
-main {
-  max-width: 700px;
-  width: 100%;
-  margin: 0 auto;
+.main {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xl);
-}
-
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .grid-container {

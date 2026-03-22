@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Gallery.module.css";
 import UnsplashService from "../../services/unsplashService.js";
-import Loading from "../Loading.jsx";
+import Loading from "../loading/Loading.jsx";
 import Link from "../Link.jsx";
 
 export default function Gallery() {

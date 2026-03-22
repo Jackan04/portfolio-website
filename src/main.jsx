@@ -6,7 +6,7 @@ import App from "./App.jsx";
 import Home from "./components/home/Home.jsx";
 import Projects from "./components/Projects.jsx";
 import NotFound from "./components/NotFound.jsx";
-import Loading from "./components/Loading.jsx";
+import Loading from "./components/loading/Loading.jsx";
 
 const Gallery = lazy(() => import("./components/gallery/Gallery.jsx"));
 

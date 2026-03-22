@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./Gallery.module.css";
 import UnsplashService from "../../services/unsplashService.js";
 import Loading from "../loading/Loading.jsx";
-import Link from "../Link.jsx";
+import CustomLink from "../CustomLink.jsx";
 
 export default function Gallery() {
   const [images, setImages] = useState([]);
@@ -56,13 +56,13 @@ export default function Gallery() {
       <div className={styles.gallery}>
         {images.map((image) => (
           <div key={image.id} className={styles.imageCard}>
-            <Link href={image.links.html}>
+            <CustomLink href={image.links.html}>
               <img
                 src={image.urls.small}
                 loading="lazy"
                 alt={image.alt_description ?? "Unsplash photo"}
               />
-            </Link>
+            </CustomLink>
           </div>
         ))}
       </div>

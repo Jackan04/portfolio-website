@@ -1,6 +1,6 @@
 import { categories, projects } from "../data/projects";
 import { useState } from "react";
-import Link from "./Link.jsx";
+import CustomLink from "./CustomLink.jsx";
 import Dialog from "./dialog/Dialog.jsx";
 import Card from "./card/Card.jsx";
 
@@ -47,9 +47,12 @@ export default function Projects() {
               onClose={() => setIsOpen(false)}
             >
               <p>{item.description}</p>
-              <Link href={item.url} className="button small hover-opacity">
+              <CustomLink
+                href={item.url}
+                className="button small hover-opacity"
+              >
                 Visit Project
-              </Link>
+              </CustomLink>
             </Dialog>
           </li>
         ))}

@@ -151,6 +151,12 @@ ul {
   list-style: none;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
 button,
 .button {
   display: inline-flex;
@@ -238,6 +244,12 @@ button.transparent,
   will-change: transform;
 }
 
+.profile-image {
+  width: 108px;
+  height: 108px;
+  border-radius: 100%;
+}
+
 @keyframes spin {
   0% {
     transform: rotateZ(0deg);
@@ -255,6 +267,15 @@ button.transparent,
     --spacing-lg: 1.25rem;
     --spacing-xl: 1.75rem;
     --spacing-xxl: 2.5rem;
+  }
+
+  section {
+    gap: var(--spacing-md);
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
   }
 }
 

@@ -1,6 +1,5 @@
 import profileImage from "../../assets/images/profile.webp";
 import ExperienceCards from "../experience-cards/ExperienceCards.jsx";
-import styles from "./Home.module.css";
 import Link from "../Link.jsx";
 
 export default function Home() {
@@ -11,7 +10,7 @@ export default function Home() {
           src={profileImage}
           loading="lazy"
           alt="Jacob Asker"
-          className={styles.profileImage}
+          className="profile-image"
         />
         <h2>Full-Stack Developer and Informatics Student</h2>
       </section>

@@ -8,7 +8,7 @@ export default function ExperienceCards() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <ul className={styles.grid}>
+    <ul className="grid-container">
       {experiences.map((item) => (
         <li key={item.category}>
           <Card

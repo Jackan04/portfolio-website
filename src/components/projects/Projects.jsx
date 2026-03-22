@@ -33,7 +33,7 @@ export default function Projects() {
           />
         ))}
       </div>
-      <ul className={styles.grid}>
+      <ul className="grid-container">
         {visibleProjects.map((item) => (
           <li key={item.url}>
             <Card

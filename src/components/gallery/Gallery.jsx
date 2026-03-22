@@ -41,7 +41,7 @@ export default function Gallery() {
     setPage(nextPage);
   }
 
-  if (loading) return <Loading message="Loading gallery..." />;
+  if (loading) return <Loading/>;
 
   if (!loading && images.length < 1) {
     return (

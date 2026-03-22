@@ -26,7 +26,7 @@ const router = createHashRouter([
       {
         path: "/photography",
         element: (
-          <Suspense fallback={<Loading message="Loading gallery..." />}>
+          <Suspense fallback={<Loading />}>
             <Gallery />
           </Suspense>
         ),

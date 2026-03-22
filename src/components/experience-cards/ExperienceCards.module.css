@@ -16,9 +16,13 @@
 
 .arrow {
   fill: var(--color-caption);
-  width: 16px;
-  height: 16px;
+  width: var(--font-body);
+  height: var(--font-body);
   transition: transform 0.15s ease;
+}
+
+details[open] summary {
+  background-color: var(--color-gray-light);
 }
 
 details[open] .arrow {
@@ -46,9 +50,5 @@ details[open] .arrow {
     background-color: var(--color-gray-light);
     border-radius: var(--border-radius);
     cursor: pointer;
-  }
-
-  details[open] .summary:hover {
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
   }
 }

@@ -1,47 +1,10 @@
-import { StrictMode, lazy, Suspense } from "react";
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import App from "./App.jsx";
-import Home from "./components/home/Home.jsx";
-import Projects from "./components/Projects.jsx";
-import NotFound from "./components/NotFound.jsx";
-import Loading from "./components/status/Loading.jsx";
+import routes from "./routes";
 
-const Gallery = lazy(() => import("./components/gallery/Gallery.jsx"));
-
-const router = createHashRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/projects",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <Projects />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/photography",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <Gallery />
-          </Suspense>
-        ),
-      },
-      {
-        path: "*",
-        element: <NotFound />,
-      },
-    ],
-  },
-]);
+const router = createHashRouter(routes);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

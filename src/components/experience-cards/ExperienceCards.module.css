@@ -1,13 +1,54 @@
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.arrow {
+  fill: var(--color-caption);
+  width: 16px;
+  height: 16px;
+  transition: transform 0.15s ease;
+}
+
+details[open] .arrow {
+  transform: rotate(180deg);
+}
+
 .toolList {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
+  padding: var(--spacing-md);
 }
 
 .label {
+  font-size: var(--font-caption);
+  color: var(--color-body);
   border: 1px solid var(--color-border);
   background-color: var(--color-gray-light);
   padding: calc(var(--spacing-sm) * 0.5) var(--spacing-sm);
   border-radius: var(--border-radius);
+}
+
+@media (hover: hover) {
+  .summary:hover {
+    background-color: var(--color-gray-light);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+  }
+
+  details[open] .summary:hover {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
 }

@@ -1,41 +1,25 @@
 import styles from "./ExperienceCards.module.css";
 import experiences from "../../data/experiences.js";
-import { useState } from "react";
-import Dialog from "../dialog/Dialog.jsx";
-import Card from "../card/Card.jsx";
+import ChevronDownIcon from "../../assets/icons/chevron-down.svg?react";
 
 export default function ExperienceCards() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <ul className="grid-container">
       {experiences.map((item) => (
         <li key={item.category}>
-          <Card
-            title={item.category}
-            desc={item.description}
-            buttonLabel="Read More"
-            onButtonClick={() => setIsOpen(item.category)}
-          />
-          <Dialog
-            title={item.category}
-            isOpen={isOpen === item.category}
-            onClose={() => setIsOpen(false)}
-          >
-            <div>
-              <p>{item.details}</p>
+          <details className={styles.card}>
+            <summary className={styles.summary}>
+              <h3>{item.category}</h3>
+              <ChevronDownIcon className={styles.arrow} />
+            </summary>
+            <div className={styles.toolList}>
+              {item.toolset.map((tool) => (
+                <span key={tool} className={styles.label}>
+                  {tool}
+                </span>
+              ))}
             </div>
-            <div>
-              <h3>Toolset</h3>
-              <div className={styles.toolList}>
-                {item.toolset.map((tool) => (
-                  <div key={tool} className={styles.label}>
-                    <p>{tool}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </Dialog>
+          </details>
         </li>
       ))}
     </ul>

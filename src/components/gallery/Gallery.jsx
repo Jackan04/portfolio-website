@@ -6,7 +6,7 @@ import Link from "../Link.jsx";
 
 export default function Gallery() {
   const [images, setImages] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [hasMore, setHasMore] = useState(true);
   const [page, setPage] = useState(1);
 
@@ -41,7 +41,7 @@ export default function Gallery() {
     setPage(nextPage);
   }
 
-  if (loading) return <Loading/>;
+  if (loading) return <Loading />;
 
   if (!loading && images.length < 1) {
     return (

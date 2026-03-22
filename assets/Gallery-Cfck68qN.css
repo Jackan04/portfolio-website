@@ -1,0 +1,1 @@
+._gallery_9xv93_1{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:var(--spacing-sm)}._imageCard_9xv93_7 img{width:100%;height:300px;object-fit:cover;border-radius:var(--border-radius)}._imageCard_9xv93_7{transition:transform .15s ease-out}._loadMoreButton_9xv93_18{align-self:center}@media(hover:hover){._imageCard_9xv93_7:hover{transform:scale(1.02)}}

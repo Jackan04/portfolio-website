@@ -1,10 +1,10 @@
-export default function Link({ href, className, target, ...props }) {
+export default function CustomLink({ href, className, target, ...props }) {
   return (
     <a
       href={href}
       className={className}
       target={target ?? "_blank"}
-      rel="noopener noreferrer dns-prefetch"
+      rel="noopener noreferrer"
       {...props}
     />
   );

@@ -7,48 +7,28 @@ export default function Home() {
   return (
     <>
       <section>
-        <img
-          src={profileImage}
-          loading="lazy"
-          alt="Jacob Asker"
-          className="profile-image"
-        />
-        <h2>Full-Stack Developer and Informatics Student</h2>
-      </section>
-
-      <section>
-        <h2>About Me</h2>
+        <img src={profileImage} alt="Jacob Asker" className="profile-image" />
+        <h2>Full-Stack Developer</h2>
         <p>
-          I'm currently finishing my Bachelor's in Informatics, where I bridge
-          the gap between technical implementation and user experience. I enjoy
-          turning ideas into practical, intuitive experiences and learning by
-          building real projects. You can explore my latest work on my
+          Finishing my Bachelor's in Informatics and looking for my first
+          professional role. I enjoy building practical, well-crafted
+          applications. Take a look at my{" "}
           <Link className="inline-link" to="/projects">
-            {" "}
-            projects page
+            projects
           </Link>
-          .
-        </p>
-      </section>
-
-      <section>
-        <h2>Get in Touch</h2>
-        <p>
-          I'm looking for opportunities to apply my skills in a professional
-          environment. If you think I'd be a good fit,
+          , or{" "}
           <CustomLink
             className="inline-link"
             href="mailto:jacob.asker@icloud.com"
           >
-            {" "}
-            I'd love to hear from you
+            get in touch
           </CustomLink>
           .
         </p>
       </section>
 
       <section>
-        <h2>Technical Experience</h2>
+        <h2>Skillset</h2>
         <ExperienceCards />
       </section>
     </>

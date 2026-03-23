@@ -17,8 +17,6 @@
 
 .arrow {
   fill: var(--color-caption);
-  width: clamp(14px, 1.5vw, 18px);
-  height: clamp(14px, 1.5vw, 18px);
   transition: transform 0.15s ease;
 }
 

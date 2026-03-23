@@ -1,12 +1,9 @@
 import { categories, projects } from "../data/projects.js";
 import { useState } from "react";
-import CustomLink from "../components/CustomLink.jsx";
-import Dialog from "../components/dialog/Dialog.jsx";
 import Card from "../components/card/Card.jsx";
 
 export default function Projects() {
   const [filter, setFilter] = useState(null);
-  const [isOpen, setIsOpen] = useState(null);
 
   const visibleProjects =
     filter === null
@@ -38,22 +35,9 @@ export default function Projects() {
             <Card
               title={item.title}
               desc={item.preview}
-              buttonLabel="Read More"
-              onButtonClick={() => setIsOpen(item.url)}
+              buttonLabel="Visit Project"
+              url={item.url}
             />
-            <Dialog
-              title={item.title}
-              isOpen={isOpen === item.url}
-              onClose={() => setIsOpen(false)}
-            >
-              <p>{item.description}</p>
-              <CustomLink
-                href={item.url}
-                className="button small hover-opacity"
-              >
-                Visit Project
-              </CustomLink>
-            </Dialog>
           </li>
         ))}
       </ul>

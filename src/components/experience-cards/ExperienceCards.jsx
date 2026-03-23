@@ -9,7 +9,7 @@ export default function ExperienceCards() {
         <li key={item.category}>
           <details className={styles.card}>
             <summary className={styles.summary}>
-              <h3>{item.category}</h3>
+              <b>{item.category}</b>
               <ChevronDownIcon className={styles.arrow} />
             </summary>
             <div className={styles.toolList}>

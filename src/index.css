@@ -109,7 +109,17 @@ p {
   max-width: 65ch;
 }
 
-small,
+b {
+  font-size: var(--font-body);
+  color: var(--color-body);
+  font-weight: var(--weight-semi);
+}
+
+small {
+  font-size: var(--font-caption);
+  color: var(--color-caption);
+}
+
 .body-secondary {
   color: var(--color-caption);
 }
@@ -124,11 +134,6 @@ h3 {
   color: var(--color-heading);
   font-size: var(--font-subheading);
   font-weight: var(--weight-semi);
-}
-
-.caption {
-  font-size: var(--font-caption);
-  color: var(--color-caption);
 }
 
 a {

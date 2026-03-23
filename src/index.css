@@ -24,13 +24,13 @@
 
 :root {
   /* Colors */
-  --color-accent: #6a98f8;
+  --color-accent: #4d8ef0;
   --color-background: #ffffff;
-  --color-heading: #2c323a;
-  --color-body: #44474b;
-  --color-caption: #8e949f;
-  --color-border: #d5d8dd;
-  --color-gray-light: #f2f5f7;
+  --color-heading: #1e2329;
+  --color-body: #4a5060;
+  --color-caption: #8a909c;
+  --color-border: #e0e3e8;
+  --color-gray-light: #f4f6f8;
 
   /* Font Sizes */
   --font-heading: clamp(1.125rem, 1.05rem + 0.36vw, 1.375rem);
@@ -54,19 +54,17 @@
   --spacing-xxl: 4rem;
 
   /* Line Heights */
-  --lh-tight: 1.2;
   --lh-relaxed: 1.6;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-accent: #3ca0ff;
     --color-background: #121417;
-    --color-heading: #f2f5f7;
-    --color-body: #d5d8dd;
-    --color-caption: #8e949f;
-    --color-border: #2c3138;
-    --color-gray-light: #1e2126;
+    --color-heading: #edf0f4;
+    --color-body: #b8bec8;
+    --color-caption: #6b7280;
+    --color-border: #252b33;
+    --color-gray-light: #1a1e24;
   }
 }
 

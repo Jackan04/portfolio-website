@@ -101,6 +101,11 @@ main {
   gap: var(--spacing-md);
 }
 
+.vstack {
+  display: flex;
+  flex-direction: column;
+}
+
 p {
   font-size: var(--font-body);
   line-height: var(--lh-relaxed);

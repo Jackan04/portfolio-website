@@ -67,7 +67,7 @@ export default function Gallery() {
           onClick={handleLoadMore}
           className={`hover-opacity ${styles.loadMoreButton}`}
         >
-          Load More
+          Load more
         </button>
       )}
     </>

@@ -35,7 +35,7 @@ export default function Projects() {
             <Card
               title={item.title}
               desc={item.preview}
-              buttonLabel="Visit Project"
+              buttonLabel="View project"
               url={item.url}
             />
           </li>

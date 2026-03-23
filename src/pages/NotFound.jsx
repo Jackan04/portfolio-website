@@ -9,7 +9,7 @@ export default function NotFound() {
         happens to the best of us!
       </p>
       <NavLink to="/" className="button hover-opacity">
-        Take Me Home
+        Take me home
       </NavLink>
     </section>
   );

@@ -232,13 +232,12 @@ button.ghost,
 }
 
 .icon {
-  width: clamp(20px, 1.25rem + 0.5vw, 24px);
-  height: clamp(20px, 1.25rem + 0.5vw, 24px);
+  width: 20px;
+  height: 20px;
 }
-
 .icon-small {
-  width: clamp(16px, 1rem + 0.3vw, 18px);
-  height: clamp(16px, 1rem + 0.3vw, 18px);
+  width: 16px;
+  height: 16px;
 }
 
 .profile-image {

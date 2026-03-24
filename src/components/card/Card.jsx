@@ -5,8 +5,10 @@ import ChevronRightIcon from "../../assets/icons/chevron-right.svg?react";
 export default function Card({ title, desc, buttonLabel, url }) {
   return (
     <div className={styles.card}>
-      <h3 className={styles.title}>{title}</h3>
-      <p className="body-secondary">{desc}</p>
+      <div className={styles.text}>
+        <h3 className={styles.title}>{title}</h3>
+        <small>{desc}</small>
+      </div>
       <CustomLink href={url} className="button small ghost">
         {buttonLabel}
         <ChevronRightIcon className="icon-small" />

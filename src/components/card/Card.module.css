@@ -8,6 +8,6 @@
   border-radius: var(--border-radius);
 }
 
-.card p {
+.card .text {
   flex-grow: 1;
 }

@@ -6,7 +6,7 @@ export default function Card({ title, desc, buttonLabel, url }) {
   return (
     <div className={styles.card}>
       <div className={styles.text}>
-        <b>{title}</b>
+        <h3>{title}</h3>
         <small>{desc}</small>
       </div>
       <CustomLink href={url} className="button small ghost">

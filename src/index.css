@@ -198,13 +198,6 @@ button.outline,
   border-color: var(--color-caption);
 }
 
-button.ghost,
-.button.ghost {
-  padding: 0;
-  background-color: transparent;
-  color: var(--color-body);
-}
-
 .filterButton {
   border: 1px solid var(--color-border);
   background-color: var(--color-background);
@@ -274,12 +267,6 @@ button.ghost,
   .hover-accent:hover {
     color: var(--color-accent);
     border-color: var(--color-accent);
-  }
-
-  .ghost:hover,
-  .ghost:hover > * {
-    color: var(--color-accent);
-    fill: var(--color-accent);
   }
 
   .icon.hover-accent:hover {

@@ -1,37 +1,19 @@
 const experiences = [
   {
+    category: "Languages",
+    toolset: ["JavaScript", "Swift", "C#", "Java"],
+  },
+  {
     category: "Backend",
-    toolset: [
-      "Node.js",
-      "Express.js",
-      "REST APIs",
-      "Prisma ORM",
-      "Mongoose",
-      "Passport.js",
-      "JWT",
-      "C# .NET",
-      "EJS",
-    ],
+    toolset: ["Node.js", "Express.js", "REST APIs", "Authentication"],
   },
   {
-    category: "Frontend",
-    toolset: ["React", "JavaScript", "HTML", "CSS"],
+    category: "Frontend & Mobile",
+    toolset: ["React", "React Native", "SwiftUI"],
   },
   {
-    category: "Mobile",
-    toolset: ["React Native", "Swift", "SwiftUI"],
-  },
-  {
-    category: "Data",
-    toolset: ["PostgreSQL", "MongoDB", "SQLite", "Firebase Firestore"],
-  },
-  {
-    category: "Testing",
-    toolset: ["Jest", "SuperTest", "xUnit"],
-  },
-  {
-    category: "Design",
-    toolset: ["Figma", "Sketch"],
+    category: "Databases",
+    toolset: ["PostgreSQL", "MongoDB"],
   },
 ];
 

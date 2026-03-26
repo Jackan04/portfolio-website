@@ -8,6 +8,7 @@ import CustomLink from "../../components/CustomLink.jsx";
 export default function Gallery() {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState({ message: "Error message" });
   const [hasMore, setHasMore] = useState(true);
   const [page, setPage] = useState(1);
 
@@ -18,10 +19,8 @@ export default function Gallery() {
         const data = await UnsplashService.getAllImages(1);
         setImages(data);
       } catch (err) {
+        setError(err);
         setImages([]);
-        if (import.meta.env.DEV) {
-          console.error("Error fetching images:", err);
-        }
       } finally {
         setLoading(false);
       }
@@ -31,20 +30,25 @@ export default function Gallery() {
   }, []);
 
   async function handleLoadMore() {
-    const nextPage = page + 1;
-    const newImages = await UnsplashService.getAllImages(nextPage);
+    try {
+      const nextPage = page + 1;
+      const newImages = await UnsplashService.getAllImages(nextPage);
 
-    if (newImages.length === 0 || newImages.length < 12) {
+      if (newImages.length === 0 || newImages.length < 12) {
+        setHasMore(false);
+      }
+
+      setImages((prev) => [...prev, ...newImages]);
+      setPage(nextPage);
+    } catch (err) {
+      setError(err);
       setHasMore(false);
     }
-
-    setImages((prev) => [...prev, ...newImages]);
-    setPage(nextPage);
   }
 
   if (loading) return <Loading />;
-  if (!loading && images.length < 1)
-    return <Error message="Failed to load the images from Unsplash." />;
+  if (error) return <Error message={error.message} />;
+
   return (
     <>
       <div className={styles.gallery}>

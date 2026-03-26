@@ -52,9 +52,6 @@
   --spacing-lg: 1.5rem;
   --spacing-xl: 2rem;
   --spacing-xxl: 4rem;
-
-  /* Line Heights */
-  --lh-relaxed: 1.6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -72,7 +69,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "SN Pro", sans-serif;
 }
 
 html {
@@ -80,7 +76,9 @@ html {
 }
 
 body {
+  font-family: "SN Pro", sans-serif;
   background-color: var(--color-background);
+  line-height: 1.5;
 }
 
 .app {
@@ -115,7 +113,6 @@ footer {
 
 p {
   font-size: var(--font-body);
-  line-height: var(--lh-relaxed);
   color: var(--color-body);
   white-space: pre-wrap;
   max-width: 65ch;

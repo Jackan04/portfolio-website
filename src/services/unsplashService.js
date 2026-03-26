@@ -8,12 +8,6 @@ class UnsplashService {
     const response = await fetch(this.url + `&page=${page}`);
 
     if (!response.ok) {
-      const errorText = await response.text();
-
-      if (import.meta.env.DEV) {
-        console.error("Unsplash API error:", response.status, errorText);
-      }
-
       throw new Error(
         `Failed to fetch images: ${response.status} ${response.statusText}`,
       );

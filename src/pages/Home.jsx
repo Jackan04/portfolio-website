@@ -15,11 +15,11 @@ export default function Home() {
     <>
       <section>
         <img src={profileImage} alt="Jacob Asker" className="profile-image" />
-        <h2>Hi, I'm Jacob!</h2>
+        <h2>Hi, I'm Jacob</h2>
         <p>
-          I'm a full-stack web developer finishing my Bachelor's in Informatics,
-          specializing in React and Node.js. I build with care for how things
-          work and how they feel to use.
+          I’m a Full-stack Developer with a bachelor's in Informatics, building
+          web and mobile applications with a focus on usability and solid
+          architecture.
         </p>
 
         <small>Gothenburg, Sweden | Available for work</small>

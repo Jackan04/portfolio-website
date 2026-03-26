@@ -114,14 +114,7 @@ footer {
 p {
   font-size: var(--font-body);
   color: var(--color-body);
-  white-space: pre-wrap;
   max-width: 65ch;
-}
-
-b {
-  font-size: var(--font-body);
-  color: var(--color-body);
-  font-weight: var(--weight-semi);
 }
 
 small {
@@ -270,7 +263,6 @@ button.ghost,
   }
 
   .hover-accent:hover,
-  .hover-ghost:hover,
   .hover-opacity:hover {
     cursor: pointer;
   }

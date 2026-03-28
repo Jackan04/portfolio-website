@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useInfiniteQuery } from "@tanstack/react-query";
 import styles from "./Gallery.module.css";
 import UnsplashService from "../../services/unsplashService.js";
 import Loading from "../../components/status/Loading.jsx";
@@ -7,24 +6,28 @@ import Error from "../../components/status/Error.jsx";
 import CustomLink from "../../components/CustomLink.jsx";
 
 export default function Gallery() {
-  const [images, setImages] = useState([]);
-  const [hasMore, setHasMore] = useState(true);
-  const [page, setPage] = useState(1);
+  const {
+    data,
+    error,
+    fetchNextPage,
+    hasNextPage,
+    isFetchingNextPage,
+    status,
+  } = useInfiniteQuery({
+    queryKey: ["photos"],
+    queryFn: ({ pageParam }) => UnsplashService.getAllImages(pageParam),
+    initialPageParam: 1,
+    getNextPageParam: (lastPage, allPages) => {
+      const hasMore = lastPage.length > 0 && lastPage.length >= 12;
 
-  const { isLoading, error } = useQuery({
-    queryKey: ["gallery", page],
-    queryFn: async () => {
-      const data = await UnsplashService.getAllImages(page);
-      setImages((prev) => (page === 1 ? data : [...prev, ...data]));
-
-      if (data.length === 0 || data.length < 12) setHasMore(false);
-
-      return data;
+      return hasMore ? allPages.length + 1 : null;
     },
   });
 
-  if (isLoading && page === 1) return <Loading />;
-  if (error) return <Error message={error.message} />;
+  if (status === "pending") return <Loading />;
+  if (status === "error") return <Error message={error.message} />;
+
+  const images = data.pages.flat();
 
   return (
     <>
@@ -41,14 +44,13 @@ export default function Gallery() {
           </div>
         ))}
       </div>
-
-      {hasMore && (
+      {hasNextPage && (
         <button
-          onClick={() => setPage((p) => p + 1)}
-          disabled={isLoading}
+          onClick={() => fetchNextPage()}
+          disabled={isFetchingNextPage}
           className={`hover-opacity ${styles.loadMoreButton}`}
         >
-          {isLoading ? "Loading..." : "Load more"}
+          {isFetchingNextPage ? "Loading..." : "Load more"}
         </button>
       )}
     </>

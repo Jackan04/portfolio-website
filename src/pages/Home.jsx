@@ -5,6 +5,7 @@ import { projects } from "../data/projects.js";
 import { useState } from "react";
 import CustomLink from "../components/CustomLink.jsx";
 import Card from "../components/card/Card.jsx";
+import GitHubIcon from "../assets/icons/github.svg?react";
 
 export default function Home() {
   const [featuredProjects, _] = useState(
@@ -22,12 +23,21 @@ export default function Home() {
         </p>
 
         <small>Gothenburg, Sweden | Available for work</small>
-        <CustomLink
-          href="mailto:jacob.asker@icloud.com"
-          className="button small hover-opacity"
-        >
-          Contact me
-        </CustomLink>
+        <div className="btn-group">
+          <CustomLink
+            href="mailto:jacob.asker@icloud.com"
+            className="button small hover-opacity"
+          >
+            Contact me
+          </CustomLink>
+          <CustomLink
+            href="https://github.com/Jackan04?tab=repositories"
+            className="button small outline hover-accent"
+          >
+            <GitHubIcon className="icon-small" />
+            GitHub
+          </CustomLink>
+        </div>
       </section>
 
       <section>

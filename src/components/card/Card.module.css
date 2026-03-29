@@ -6,11 +6,11 @@
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   padding: var(--spacing-lg);
-  transition: background-color 0.18s ease;
+  transition: var(--transition-bg);
 }
 
 .chevron {
-  transition: transform 0.18s ease;
+  transition: var(--transition-transform);
 }
 
 @media (hover: hover) {

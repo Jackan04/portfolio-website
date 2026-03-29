@@ -12,7 +12,7 @@
 }
 
 .imageCard {
-  transition: transform 0.15s ease-out;
+  transition: var(--transition-transform);
 }
 
 .loadMoreButton {

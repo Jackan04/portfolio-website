@@ -33,7 +33,7 @@ export default function Gallery() {
     <>
       <div className={styles.gallery}>
         {images.map((image) => (
-          <div key={image.id} className={styles.imageCard}>
+          <div key={image.id} className={`hover-scale ${styles.imageCard}`}>
             <CustomLink href={image.links.html}>
               <img
                 src={image.urls.small}

@@ -18,9 +18,3 @@
 .loadMoreButton {
   align-self: center;
 }
-
-@media (hover: hover) {
-  .imageCard:hover {
-    transform: scale(1.02);
-  }
-}

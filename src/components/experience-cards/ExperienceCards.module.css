@@ -9,15 +9,15 @@
   align-items: center;
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--border-radius);
+  transition: var(--transition-bg);
 }
 
 .summary::-webkit-details-marker {
   display: none;
 }
 
-.arrow {
-  fill: var(--color-caption);
-  transition: transform 0.15s ease;
+.chevron {
+  transition: var(--transition-transform);
 }
 
 details[open] .summary {
@@ -25,7 +25,7 @@ details[open] .summary {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
-details[open] .arrow {
+details[open] .chevron {
   transform: rotate(180deg);
 }
 

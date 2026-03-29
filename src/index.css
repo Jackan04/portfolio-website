@@ -305,6 +305,10 @@ button.ghost,
     background-color: var(--color-gray-light);
   }
 
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+
   .icon.hover-accent:hover {
     fill: var(--color-accent);
   }

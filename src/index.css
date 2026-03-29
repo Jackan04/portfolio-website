@@ -52,6 +52,14 @@
   --spacing-lg: 1.5rem;
   --spacing-xl: 2rem;
   --spacing-xxl: 4rem;
+
+  /* Transitions */
+  --transition-transform: transform 0.18s ease;
+  --transition-opacity: opacity 0.18s ease;
+  --transition-fill: fill 0.18s ease;
+  --transition-color-border: border-color 0.18s ease, color 0.18s ease;
+  --transition-color: color 0.18s ease;
+  --transition-bg: background-color 0.18s ease;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -142,10 +150,7 @@ h3 {
 a {
   text-decoration: none;
   color: var(--color-body);
-}
-
-.inline-link {
-  color: var(--color-accent);
+  transition: var(--transition-color);
 }
 
 ul {
@@ -194,6 +199,7 @@ button,
   font-size: var(--font-body);
   font-weight: var(--weight-semi);
   width: fit-content;
+  transition: var(--transition-opacity);
 }
 
 button.small,
@@ -206,16 +212,19 @@ button.outline,
 .button.outline {
   background-color: transparent;
   color: var(--color-body);
-  border-color: var(--color-caption);
+  border-color: var(--color-body);
+  transition: var(--transition-color-border);
 }
 
 button.ghost,
 .button.ghost {
   color: var(--color-body);
   background-color: transparent;
+  transition: var(--transition-bg);
 }
 
 .filterButton {
+  transition: var(--transition-color);
   border: 1px solid var(--color-border);
   background-color: var(--color-background);
   color: var(--color-caption);
@@ -223,6 +232,7 @@ button.ghost,
   border-radius: var(--border-radius-full);
   font-size: var(--font-caption);
   font-weight: var(--weight-semi);
+  transition: var(--transition-color-border);
 }
 
 .filterButton.active {
@@ -234,6 +244,7 @@ button.ghost,
 .icon,
 .icon-small {
   fill: var(--color-body);
+  transition: var(--transition-fill);
 }
 
 .icon {
@@ -246,8 +257,8 @@ button.ghost,
 }
 
 .profile-image {
-  width: 108px;
-  height: 108px;
+  width: 90px;
+  height: 90px;
   border-radius: var(--border-radius-full);
 }
 
@@ -261,8 +272,8 @@ button.ghost,
   }
 
   .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 72px;
+    height: 72px;
   }
 }
 
@@ -296,10 +307,6 @@ button.ghost,
 
   .icon.hover-accent:hover {
     fill: var(--color-accent);
-  }
-
-  .inline-link:hover {
-    border-bottom: 1px solid var(--color-accent);
   }
 }
 

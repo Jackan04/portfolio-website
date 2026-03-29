@@ -8,7 +8,7 @@ export default function ExperienceCards() {
       {experiences.map((item) => (
         <li key={item.category}>
           <details className={styles.card}>
-            <summary className={styles.summary}>
+            <summary className={`hover-bg ${styles.summary}`}>
               <p>{item.category}</p>
               <ChevronDownIcon className={`icon-small ${styles.chevron}`} />
             </summary>

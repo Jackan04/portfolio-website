@@ -44,10 +44,3 @@ details[open] .chevron {
   padding: calc(var(--spacing-sm) * 0.5) var(--spacing-sm);
   border-radius: var(--border-radius);
 }
-
-@media (hover: hover) {
-  .summary:hover {
-    background-color: var(--color-gray-light);
-    cursor: pointer;
-  }
-}

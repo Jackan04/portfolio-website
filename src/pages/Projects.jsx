@@ -32,11 +32,7 @@ export default function Projects() {
       <ul className="grid-container">
         {visibleProjects.map((item) => (
           <li key={item.url}>
-            <Card
-              title={item.title}
-              desc={item.preview}
-              url={item.url}
-            />
+            <Card title={item.title} desc={item.preview} url={item.url} />
           </li>
         ))}
       </ul>
@@ -49,7 +45,7 @@ function FilterButton({ label, value, filter, setFilter }) {
     <button
       onClick={() => setFilter(value)}
       className={
-        value === filter ? "filterButton active" : "filterButton hover-accent"
+        value === filter ? "filter-btn active" : "filter-btn hover-accent"
       }
     >
       {label}

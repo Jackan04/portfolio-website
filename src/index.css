@@ -53,6 +53,7 @@
   --spacing-lg: clamp(1.25rem, 2vw, 1.5rem);
   --spacing-xl: clamp(1.5rem, 3vw, 2rem);
   --spacing-xxl: clamp(2.5rem, 6vw, 4rem);
+  --spacing-xxxl: clamp(3.5rem, 9vw, 5rem);
 
   /* Transitions */
   --transition-transform: transform 0.18s ease;
@@ -223,7 +224,7 @@ button.ghost,
   transition: var(--transition-bg);
 }
 
-.filterButton {
+.filter-btn {
   transition: var(--transition-color);
   border: 1px solid var(--color-border);
   background-color: var(--color-background);
@@ -233,9 +234,11 @@ button.ghost,
   font-size: var(--font-caption);
   font-weight: var(--weight-semi);
   transition: var(--transition-color-border);
+  transition: var(--transition-color);
+  transition: var(--transition-bg);
 }
 
-.filterButton.active {
+.filter-btn.active {
   border-color: var(--color-accent);
   background-color: var(--color-accent);
   color: var(--color-background);

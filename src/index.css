@@ -233,9 +233,7 @@ button.ghost,
   border-radius: var(--border-radius-full);
   font-size: var(--font-caption);
   font-weight: var(--weight-semi);
-  transition: var(--transition-color-border);
-  transition: var(--transition-color);
-  transition: var(--transition-bg);
+  transition: var(--transition-color-border), var(--transition-bg);
 }
 
 .filter-btn.active {

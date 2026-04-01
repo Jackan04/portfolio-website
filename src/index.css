@@ -224,6 +224,12 @@ button.ghost,
   transition: var(--transition-bg);
 }
 
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
 .filter-btn {
   transition: var(--transition-color);
   border: 1px solid var(--color-border);

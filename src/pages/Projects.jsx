@@ -14,12 +14,6 @@ export default function Projects() {
     <>
       <section>
         <div className="btn-group">
-          <b>Filter by category</b>
-          <small className="text-secondary">
-            ( {visibleProjects.length} / {projects.length} )
-          </small>
-        </div>
-        <div className="btn-group">
           <FilterButton
             label="All"
             value={null}
@@ -37,7 +31,6 @@ export default function Projects() {
           ))}
         </div>
       </section>
-
       <ul className="grid-container">
         {visibleProjects.map((item) => (
           <li key={item.url}>

@@ -12,22 +12,30 @@ export default function Projects() {
 
   return (
     <>
-      <div className="btn-group">
-        <FilterButton
-          label="All"
-          value={null}
-          filter={filter}
-          setFilter={setFilter}
-        />
-        {categories.map((category) => (
+      <div className="filter-container">
+        <div className="btn-group">
+          <b>Filter by category</b>
+          <small className="text-secondary">
+            ( {visibleProjects.length} / {projects.length} )
+          </small>
+        </div>
+        <div className="btn-group">
           <FilterButton
-            key={category}
-            label={category.charAt(0).toUpperCase() + category.slice(1)}
-            value={category}
+            label="All"
+            value={null}
             filter={filter}
             setFilter={setFilter}
           />
-        ))}
+          {categories.map((category) => (
+            <FilterButton
+              key={category}
+              label={category.charAt(0).toUpperCase() + category.slice(1)}
+              value={category}
+              filter={filter}
+              setFilter={setFilter}
+            />
+          ))}
+        </div>
       </div>
       <ul className="grid-container">
         {visibleProjects.map((item) => (

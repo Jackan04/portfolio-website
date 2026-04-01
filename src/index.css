@@ -169,6 +169,7 @@ section {
 .hstack {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .justify-between {
@@ -184,6 +185,7 @@ section {
 .btn-group > * {
   display: flex;
   align-self: center;
+  flex-wrap: wrap;
 }
 
 button,

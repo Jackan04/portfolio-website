@@ -12,7 +12,7 @@ export default function Projects() {
 
   return (
     <>
-      <div className="filter-container">
+      <section>
         <div className="btn-group">
           <b>Filter by category</b>
           <small className="text-secondary">
@@ -36,7 +36,8 @@ export default function Projects() {
             />
           ))}
         </div>
-      </div>
+      </section>
+
       <ul className="grid-container">
         {visibleProjects.map((item) => (
           <li key={item.url}>

@@ -122,7 +122,8 @@ footer {
   gap: var(--spacing-md);
 }
 
-p {
+p,
+b {
   font-size: var(--font-body);
   color: var(--color-body);
   max-width: 65ch;

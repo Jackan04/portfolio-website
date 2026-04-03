@@ -11,7 +11,7 @@ export default function BlogCard({ title, summary, date, url }) {
 
   return (
     <article>
-      <CustomLink href={url} className={`hover-bg ${styles.card}`}>
+      <CustomLink href={url} className={`hover-bg ${styles.blogCard}`}>
         <div className="hstack justify-between">
           <h3>{title}</h3>
           <ChevronRightIcon className={`icon-small ${styles.chevron}`} />

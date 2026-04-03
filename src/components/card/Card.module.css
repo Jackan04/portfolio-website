@@ -1,12 +1,22 @@
-.card {
+.card,
+.blogCard {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-sm);
   height: 100%;
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius);
-  padding: var(--spacing-lg);
   transition: var(--transition-bg);
+  padding: var(--spacing-lg);
+}
+
+.card {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+}
+
+.blogCard {
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .chevron {
@@ -19,7 +29,8 @@
 }
 
 @media (hover: hover) {
-  .card:hover .chevron {
+  .card:hover .chevron,
+  .blogCard:hover .chevron {
     transform: translateX(3px);
   }
 }

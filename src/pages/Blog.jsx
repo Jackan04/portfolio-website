@@ -16,7 +16,7 @@ export default function Blog() {
 
   return (
     <section aria-label="Blog posts">
-      <ul className="vstack">
+      <ul>
         {data.map((item) => (
           <li key={item.id ?? item.url}>
             <BlogCard

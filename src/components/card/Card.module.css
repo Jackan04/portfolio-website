@@ -13,6 +13,11 @@
   transition: var(--transition-transform);
 }
 
+.date {
+  margin-top: auto;
+  padding-top: var(--spacing-xs);
+}
+
 @media (hover: hover) {
   .card:hover .chevron {
     transform: translateX(3px);

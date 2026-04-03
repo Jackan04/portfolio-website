@@ -2,19 +2,12 @@ import { useQuery } from "@tanstack/react-query";
 import Error from "../components/status/Error";
 import Loading from "../components/status/Loading";
 import BlogCard from "../components/card/BlogCard";
+import BlogService from "../services/blogService";
 
 export default function Blog() {
   const { data, status, error } = useQuery({
     queryKey: ["blog"],
-    queryFn: async () => {
-      const response = await fetch("https://jacobasker.micro.blog/feed.json", {
-        cache: "no-store",
-      });
-      if (!response.ok)
-        throw new Error(`${response.status} ${response.statusText}`);
-      const feed = await response.json();
-      return feed.items;
-    },
+    queryFn: () => BlogService.getAllPosts(),
     staleTime: 1000 * 60 * 5,
   });
 

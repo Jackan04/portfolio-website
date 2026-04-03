@@ -30,7 +30,7 @@ export default function Gallery() {
   const images = data.pages.flat();
 
   return (
-    <>
+    <section aria-label="Photo gallery">
       <div className={styles.gallery}>
         {images.map((image) => (
           <div key={image.id} className={`hover-opacity ${styles.imageCard}`}>
@@ -53,6 +53,6 @@ export default function Gallery() {
           {isFetchingNextPage ? "Loading..." : "Load more"}
         </button>
       )}
-    </>
+    </section>
   );
 }

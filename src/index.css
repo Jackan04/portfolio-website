@@ -132,6 +132,7 @@ b {
 small {
   font-size: var(--font-caption);
   color: var(--color-body);
+  max-width: 65ch;
 }
 
 .text-secondary {

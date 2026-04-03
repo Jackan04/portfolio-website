@@ -7,7 +7,9 @@ export default function Blog() {
   const { data, status, error } = useQuery({
     queryKey: ["blog"],
     queryFn: async () => {
-      const response = await fetch("https://jacobasker.micro.blog/feed.json");
+      const response = await fetch("https://jacobasker.micro.blog/feed.json", {
+        cache: "no-store",
+      });
       if (!response.ok)
         throw new Error(`${response.status} ${response.statusText}`);
       const feed = await response.json();

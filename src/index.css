@@ -172,6 +172,12 @@ section {
   flex-wrap: wrap;
 }
 
+.vstack {
+  display: flex;
+  gap: var(--spacing-ms);
+  flex-direction: column;
+}
+
 .justify-between {
   justify-content: space-between;
 }

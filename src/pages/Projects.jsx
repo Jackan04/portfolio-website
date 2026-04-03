@@ -12,7 +12,7 @@ export default function Projects() {
 
   return (
     <>
-      <section>
+      <section aria-label="Filter buttons">
         <div className="btn-group">
           <FilterButton
             label="All"
@@ -31,13 +31,15 @@ export default function Projects() {
           ))}
         </div>
       </section>
-      <ul className="grid-container">
-        {visibleProjects.map((item) => (
-          <li key={item.url}>
-            <Card title={item.title} desc={item.preview} url={item.url} />
-          </li>
-        ))}
-      </ul>
+      <section aria-label="Projects">
+        <ul className="grid-container">
+          {visibleProjects.map((item) => (
+            <li key={item.url}>
+              <Card title={item.title} desc={item.preview} url={item.url} />
+            </li>
+          ))}
+        </ul>
+      </section>
     </>
   );
 }

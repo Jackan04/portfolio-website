@@ -15,17 +15,19 @@ export default function Blog() {
   if (status === "pending") return <Loading />;
 
   return (
-    <ul className="vstack">
-      {data.map((item) => (
-        <li key={item.url}>
-          <BlogCard
-            title={item.title ?? "Untitled"}
-            summary={item.summary}
-            date={item.date_published}
-            url={item.url}
-          />
-        </li>
-      ))}
-    </ul>
+    <section aria-label="Blog posts">
+      <ul className="vstack">
+        {data.map((item) => (
+          <li key={item.id ?? item.url}>
+            <BlogCard
+              title={item.title ?? "Untitled"}
+              summary={item.summary}
+              date={item.date_published}
+              url={item.url}
+            />
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }

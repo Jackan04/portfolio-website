@@ -1,7 +1,7 @@
 const experiences = [
   {
     category: "Languages",
-    toolset: ["JavaScript", "Swift", "C#", "Java"],
+    toolset: ["JavaScript", "TypeScript", "Swift", "C#", "Java"],
   },
   {
     category: "Backend",

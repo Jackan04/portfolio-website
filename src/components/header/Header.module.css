@@ -26,3 +26,9 @@ nav ul {
   font-weight: var(--weight-bold);
   color: var(--color-caption);
 }
+
+@media (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+}

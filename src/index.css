@@ -205,27 +205,24 @@ button,
   font-weight: var(--weight-semi);
   width: fit-content;
   transition: var(--transition-opacity);
-}
 
-button.small,
-.button.small {
-  font-size: var(--font-caption);
-  padding: var(--spacing-xs) var(--spacing-sm);
-}
+  &.small {
+    font-size: var(--font-caption);
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
 
-button.outline,
-.button.outline {
-  background-color: transparent;
-  color: var(--color-body);
-  border-color: var(--color-body);
-  transition: var(--transition-color-border);
-}
+  &.outline {
+    background-color: transparent;
+    color: var(--color-body);
+    border-color: var(--color-body);
+    transition: var(--transition-color-border);
+  }
 
-button.ghost,
-.button.ghost {
-  color: var(--color-body);
-  background-color: transparent;
-  transition: var(--transition-bg);
+  &.ghost {
+    color: var(--color-body);
+    background-color: transparent;
+    transition: var(--transition-bg);
+  }
 }
 
 .filter-btn {
@@ -238,12 +235,12 @@ button.ghost,
   font-size: var(--font-caption);
   font-weight: var(--weight-semi);
   transition: var(--transition-color-border), var(--transition-bg);
-}
 
-.filter-btn.active {
-  border-color: var(--color-accent);
-  background-color: var(--color-accent);
-  color: var(--color-background);
+  &.active {
+    border-color: var(--color-accent);
+    background-color: var(--color-accent);
+    color: var(--color-background);
+  }
 }
 
 .icon,
@@ -275,32 +272,42 @@ button.ghost,
 }
 
 @media (hover: hover) {
-  button:active,
-  .button:active {
-    transform: scale(0.97);
+  button,
+  .button {
+    &:active {
+      transform: scale(0.97);
+    }
   }
 
-  .hover-accent:hover,
-  .hover-opacity:hover,
-  .hover-bg:hover {
-    cursor: pointer;
+  .hover-accent,
+  .hover-opacity,
+  .hover-bg {
+    &:hover {
+      cursor: pointer;
+    }
   }
 
-  .hover-opacity:hover {
-    opacity: 0.8;
+  .hover-opacity {
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
-  .hover-accent:hover {
-    color: var(--color-accent);
-    border-color: var(--color-accent);
+  .hover-accent {
+    &:hover {
+      color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+
+    &:hover > * {
+      fill: var(--color-accent);
+    }
   }
 
-  .hover-accent:hover > * {
-    fill: var(--color-accent);
-  }
-
-  .hover-bg:hover {
-    background-color: var(--color-gray-light);
+  .hover-bg {
+    &:hover {
+      background-color: var(--color-gray-light);
+    }
   }
 }
 

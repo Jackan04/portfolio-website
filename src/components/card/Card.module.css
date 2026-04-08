@@ -27,8 +27,10 @@
 }
 
 @media (hover: hover) {
-  .card:hover .chevron,
-  .blogCard:hover .chevron {
-    transform: translateX(3px);
+  .card,
+  .blogCard {
+    &:hover .chevron {
+      transform: translateX(3px);
+    }
   }
 }

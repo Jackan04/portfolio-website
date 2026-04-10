@@ -7,7 +7,7 @@ export default function Card({ title, desc, url }) {
     <CustomLink href={url} className={`hover-bg ${styles.card}`}>
       <div className="hstack justify-between">
         <h3>{title}</h3>
-        <ChevronRightIcon className={`icon-small ${styles.chevron}`} />
+        <ChevronRightIcon className="icon-small hover-shift" />
       </div>
       <small>{desc}</small>
     </CustomLink>

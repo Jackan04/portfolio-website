@@ -215,11 +215,6 @@ button,
     color: var(--color-body);
     border-color: var(--color-body);
   }
-
-  &.ghost {
-    color: var(--color-body);
-    background-color: transparent;
-  }
 }
 
 .filter-btn {

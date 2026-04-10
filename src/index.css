@@ -243,6 +243,15 @@ button,
   }
 }
 
+.label {
+  font-size: var(--font-caption);
+  color: var(--color-body);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-gray-light);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius);
+}
+
 .icon,
 .icon-small {
   fill: var(--color-body);

@@ -17,34 +17,34 @@ export default function Footer() {
           className="hover-accent"
           href="https://jacobasker.micro.blog/feed.json"
         >
-          <RSSIcon className="icon hover-accent" />
+          <RSSIcon className="icon" />
         </CustomLink>
         <CustomLink
           className="hover-accent"
           href="mailto:jacob.asker@icloud.com"
         >
-          <EnvelopeIcon className="icon hover-accent" />
+          <EnvelopeIcon className="icon" />
         </CustomLink>
         <CustomLink
           href="https://github.com/Jackan04?tab=repositories"
           className="hover-accent"
           aria-label="Visit Jacob Asker on GitHub"
         >
-          <GitHubIcon className="icon hover-accent" />
+          <GitHubIcon className="icon" />
         </CustomLink>
         <CustomLink
           href="https://www.linkedin.com/in/jacob-asker-a096a7352/"
           className="hover-accent"
           aria-label="Visit Jacob Asker on LinkedIn"
         >
-          <LinkedInIcon className="icon hover-accent" />
+          <LinkedInIcon className="icon" />
         </CustomLink>
         <CustomLink
           href="https://unsplash.com/@jacobasker04"
           className="hover-accent"
           aria-label="Visit Jacob Asker on Unsplash"
         >
-          <UnsplashIcon className="icon hover-accent" />
+          <UnsplashIcon className="icon" />
         </CustomLink>
       </div>
     </footer>

@@ -1,26 +1,35 @@
 const experiences = [
   {
-    category: "Languages",
-    toolset: ["JavaScript", "TypeScript", "Swift", "C#", "Java"],
+    name: "TypeScript",
+    url: "https://www.typescriptlang.org",
   },
   {
-    category: "Backend",
-    toolset: [
-      "Node.js",
-      "Express.js",
-      "PostgreSQL",
-      "MongoDB",
-      "Passport.js",
-      "JWT",
-    ],
+    name: "JavaScript",
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
-    category: "Frontend",
-    toolset: ["React", "React Native", "SwiftUI"],
+    name: "Swift",
+    url: "https://www.swift.org",
   },
   {
-    category: "Tools",
-    toolset: ["Git", "Figma", "Sketch"],
+    name: "C#",
+    url: "https://dotnet.microsoft.com/en-us/languages/csharp",
+  },
+  {
+    name: "React",
+    url: "https://react.dev",
+  },
+  {
+    name: "Node.js",
+    url: "https://nodejs.org/en",
+  },
+  {
+    name: "PostgreSQL",
+    url: "https://www.postgresql.org",
+  },
+  {
+    name: "MongoDB",
+    url: "https://www.mongodb.com",
   },
 ];
 

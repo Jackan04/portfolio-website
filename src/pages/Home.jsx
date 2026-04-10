@@ -47,7 +47,7 @@ export default function Home() {
       <section>
         <div className="hstack justify-between">
           <h2>Featured Projects</h2>
-          <Link to="/projects" className="button small ghost hover-bg">
+          <Link to="/projects" className="hover-accent">
             See all
           </Link>
         </div>

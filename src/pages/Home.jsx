@@ -36,7 +36,7 @@ export default function Home() {
           </CustomLink>
           <CustomLink
             href="https://github.com/Jackan04?tab=repositories"
-            className="button small outline hover-accent"
+            className="button small outline hover-bg"
           >
             <GitHubIcon className="icon-small" />
             GitHub

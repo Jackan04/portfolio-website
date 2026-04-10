@@ -302,8 +302,8 @@ button,
   .hover-accent {
     transition: var(--transition-color-border);
 
-    > .icon,
-    > .icon-small {
+    .icon,
+    .icon-small {
       transition: var(--transition-fill);
     }
 
@@ -312,7 +312,8 @@ button,
       border-color: var(--color-accent);
     }
 
-    &:hover > * {
+    &:hover .icon,
+    &:hover .icon-small {
       fill: var(--color-accent);
     }
   }
@@ -323,16 +324,14 @@ button,
     &:hover {
       background-color: var(--color-gray-light);
     }
+
+    &:hover .hover-shift {
+      transform: translateX(3px);
+    }
   }
 
   .hover-shift {
     transition: var(--transition-transform);
-  }
-
-  .hover-bg {
-    &:hover .hover-shift {
-      transform: translateX(3px);
-    }
   }
 }
 

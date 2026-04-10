@@ -154,7 +154,6 @@ h3 {
 a {
   text-decoration: none;
   color: var(--color-body);
-  transition: var(--transition-color);
 }
 
 ul {
@@ -205,7 +204,6 @@ button,
   font-size: var(--font-body);
   font-weight: var(--weight-semi);
   width: fit-content;
-  transition: var(--transition-opacity);
 
   &.small {
     font-size: var(--font-caption);
@@ -216,18 +214,15 @@ button,
     background-color: transparent;
     color: var(--color-body);
     border-color: var(--color-body);
-    transition: var(--transition-color-border);
   }
 
   &.ghost {
     color: var(--color-body);
     background-color: transparent;
-    transition: var(--transition-bg);
   }
 }
 
 .filter-btn {
-  transition: var(--transition-color);
   border: 1px solid var(--color-border);
   background-color: var(--color-background);
   color: var(--color-caption);
@@ -256,7 +251,6 @@ button,
 .icon,
 .icon-small {
   fill: var(--color-body);
-  transition: var(--transition-fill);
 }
 
 .icon {
@@ -298,12 +292,21 @@ button,
   }
 
   .hover-opacity {
+    transition: var(--transition-opacity);
+
     &:hover {
       opacity: 0.8;
     }
   }
 
   .hover-accent {
+    transition: var(--transition-color-border);
+
+    > .icon,
+    > .icon-small {
+      transition: var(--transition-fill);
+    }
+
     &:hover {
       color: var(--color-accent);
       border-color: var(--color-accent);
@@ -315,8 +318,20 @@ button,
   }
 
   .hover-bg {
+    transition: var(--transition-bg);
+
     &:hover {
       background-color: var(--color-gray-light);
+    }
+  }
+
+  .hover-shift {
+    transition: var(--transition-transform);
+  }
+
+  .hover-bg {
+    &:hover .hover-shift {
+      transform: translateX(3px);
     }
   }
 }

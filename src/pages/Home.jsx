@@ -1,8 +1,8 @@
 import profileImage from "../assets/images/profile.webp";
-import ExperienceCards from "../components/experience-cards/ExperienceCards.jsx";
 import { Link } from "react-router-dom";
 import { projects } from "../data/projects.js";
 import { useState } from "react";
+import ExperienceCards from "../components/ExperienceCards.jsx";
 import CustomLink from "../components/CustomLink.jsx";
 import Card from "../components/card/Card.jsx";
 import GitHubIcon from "../assets/icons/github.svg?react";

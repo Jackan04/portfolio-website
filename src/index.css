@@ -94,7 +94,7 @@ body {
 
 .app {
   min-height: 100dvh;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   display: grid;
   grid-template-rows: auto 1fr auto;

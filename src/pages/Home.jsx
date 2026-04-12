@@ -19,9 +19,8 @@ export default function Home() {
         <h2>Jacob Asker</h2>
 
         <p>
-          I’m a Full-stack Developer with a bachelor's in Informatics, building
-          web and mobile applications with a focus on usability and solid
-          architecture.
+          I'm a Full-stack Developer with a bachelor's in Informatics,
+          specializing in JavaScript/TypeScript, Node.js, and React.
         </p>
 
         <small className="text-secondary">

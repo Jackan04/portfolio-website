@@ -259,12 +259,6 @@ button,
 
 @media (hover: hover) {
   button,
-  .button {
-    &:active {
-      transform: scale(0.97);
-    }
-  }
-
   .hover-accent,
   .hover-fade,
   .hover-button-invert,

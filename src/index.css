@@ -245,8 +245,8 @@ button,
 }
 
 .profile-image {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: var(--border-radius-full);
 }
 

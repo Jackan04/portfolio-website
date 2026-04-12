@@ -6,18 +6,12 @@ export default function HeroHeader() {
   return (
     <>
       <img src={profileImage} alt="Jacob Asker" className="profile-image" />
-
       <h2>Jacob Asker</h2>
-
       <p>
-        I'm a Full-stack Developer with a bachelor's in Informatics,
+        I'm a Full-stack Developer from Sweden with a bachelor's in Informatics,
         specializing in JavaScript/TypeScript, Node.js, and React.
       </p>
-
-      <small className="text-secondary">
-        Gothenburg, Sweden | Available for work
-      </small>
-      <div className="btn-group">
+      <div className="hstack gap-sm">
         <CustomLink
           href="mailto:jacob.asker@icloud.com"
           className="button small hover-button-invert"

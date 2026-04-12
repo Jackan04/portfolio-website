@@ -155,7 +155,7 @@ ul {
 section {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-ms);
+  gap: var(--spacing-md);
 }
 
 .hstack {

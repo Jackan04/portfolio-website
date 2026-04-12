@@ -50,7 +50,7 @@ export default function Home() {
             See all
           </Link>
         </div>
-        <ul className="list-container">
+        <ul className="vstack">
           {featuredProjects.map((item) => (
             <li key={item.url}>
               <Card title={item.title} desc={item.preview} url={item.url} />

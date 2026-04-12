@@ -36,7 +36,7 @@ export default function Projects() {
         </div>
       </section>
       <section aria-label="Projects">
-        <ul className="list-container">
+        <ul className="vstack">
           {visibleProjects.map((item) => (
             <li key={item.url}>
               <Card title={item.title} desc={item.preview} url={item.url} />

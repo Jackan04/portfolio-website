@@ -2,7 +2,6 @@ import GitHubIcon from "../assets/icons/github.svg?react";
 import LinkedInIcon from "../assets/icons/linkedin.svg?react";
 import UnsplashIcon from "../assets/icons/unsplash.svg?react";
 import EnvelopeIcon from "../assets/icons/envelope.svg?react";
-import RSSIcon from "../assets/icons/rss.svg?react";
 import CustomLink from "./CustomLink.jsx";
 
 export default function Footer() {
@@ -13,12 +12,6 @@ export default function Footer() {
         <p className="text-secondary">Jacob Asker &copy; {year}</p>
       </div>
       <div className="btn-group">
-        <CustomLink
-          className="hover-accent"
-          href="https://jacobasker.micro.blog/feed.json"
-        >
-          <RSSIcon className="icon" />
-        </CustomLink>
         <CustomLink
           className="hover-accent"
           href="mailto:jacob.asker@icloud.com"

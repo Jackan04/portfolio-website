@@ -16,7 +16,7 @@ export default function Home() {
       <section>
         <img src={profileImage} alt="Jacob Asker" className="profile-image" />
 
-        <h2>Hi, I'm Jacob</h2>
+        <h2>Jacob Asker</h2>
 
         <p>
           I’m a Full-stack Developer with a bachelor's in Informatics, building

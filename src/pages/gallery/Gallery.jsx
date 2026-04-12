@@ -33,7 +33,7 @@ export default function Gallery() {
     <section aria-label="Photo gallery">
       <div className={styles.gallery}>
         {images.map((image) => (
-          <div key={image.id} className={`hover-opacity ${styles.imageCard}`}>
+          <div key={image.id} className={`hover-fade ${styles.imageCard}`}>
             <CustomLink href={image.links.html}>
               <img
                 src={image.urls.small}
@@ -48,7 +48,7 @@ export default function Gallery() {
         <button
           onClick={() => fetchNextPage()}
           disabled={isFetchingNextPage}
-          className={`hover-opacity ${styles.loadMoreButton}`}
+          className={`hover-button-invert ${styles.loadMoreButton}`}
         >
           {isFetchingNextPage ? "Loading..." : "Load more"}
         </button>

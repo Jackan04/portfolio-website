@@ -29,13 +29,13 @@ export default function Home() {
         <div className="btn-group">
           <CustomLink
             href="mailto:jacob.asker@icloud.com"
-            className="button small hover-opacity"
+            className="button small hover-button-invert"
           >
             Contact me
           </CustomLink>
           <CustomLink
             href="https://github.com/Jackan04?tab=repositories"
-            className="button small outline hover-bg"
+            className="button small outline hover-button-fill"
           >
             <GitHubIcon className="icon-small" />
             GitHub

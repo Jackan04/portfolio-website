@@ -5,7 +5,6 @@ import Projects from "./pages/Projects.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import Loading from "./components/status/Loading.jsx";
 const Gallery = lazy(() => import("./pages/gallery/Gallery.jsx"));
-const Blog = lazy(() => import("./pages/Blog.jsx"));
 
 const routes = [
   {
@@ -25,14 +24,6 @@ const routes = [
         element: (
           <Suspense fallback={<Loading />}>
             <Gallery />
-          </Suspense>
-        ),
-      },
-      {
-        path: "blog",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <Blog />
           </Suspense>
         ),
       },

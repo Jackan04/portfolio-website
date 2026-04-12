@@ -116,12 +116,6 @@ footer {
   padding-top: var(--spacing-md);
 }
 
-.list-container {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
-}
-
 p,
 b {
   font-size: var(--font-body);
@@ -171,6 +165,12 @@ section {
   align-items: center;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
+}
+
+.vstack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
 }
 
 .justify-between {
@@ -319,14 +319,6 @@ button,
     &:hover {
       background-color: var(--color-gray-light);
     }
-
-    &:hover .hover-shift {
-      transform: translateX(3px);
-    }
-  }
-
-  .hover-shift {
-    transition: var(--transition-transform);
   }
 }
 

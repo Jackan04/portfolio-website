@@ -2,7 +2,7 @@ import profileImage from "../assets/images/profile.webp";
 import { Link } from "react-router-dom";
 import { projects } from "../data/projects.js";
 import { useState } from "react";
-import ExperienceCards from "../components/ExperienceCards.jsx";
+import GetInTouch from "../components/GetInTouch.jsx";
 import CustomLink from "../components/CustomLink.jsx";
 import Card from "../components/card/Card.jsx";
 import GitHubIcon from "../assets/icons/github.svg?react";
@@ -60,8 +60,8 @@ export default function Home() {
       </section>
 
       <section>
-        <h2>Skillset</h2>
-        <ExperienceCards />
+        <h2>Get in Touch</h2>
+        <GetInTouch />
       </section>
     </>
   );

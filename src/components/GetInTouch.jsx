@@ -6,9 +6,9 @@ import EnvelopeIcon from "../assets/icons/envelope.svg?react";
 
 export default function GetInTouch() {
   return (
-    <div className="vstack">
+    <div className="vstack gap-sm">
       <CustomLink className="hover-accent" href="mailto:jacob.asker@icloud.com">
-        <div className="hstack">
+        <div className="hstack gap-md">
           <EnvelopeIcon className="icon" />
           Email
         </div>
@@ -18,7 +18,7 @@ export default function GetInTouch() {
         className="hover-accent"
         aria-label="Visit Jacob Asker on GitHub"
       >
-        <div className="hstack">
+        <div className="hstack gap-md">
           <GitHubIcon className="icon" />
           GitHub
         </div>
@@ -28,7 +28,7 @@ export default function GetInTouch() {
         className="hover-accent"
         aria-label="Visit Jacob Asker on LinkedIn"
       >
-        <div className="hstack">
+        <div className="hstack gap-md">
           <LinkedInIcon className="icon" />
           LinkedIn
         </div>
@@ -38,7 +38,7 @@ export default function GetInTouch() {
         className="hover-accent"
         aria-label="Visit Jacob Asker on Unsplash"
       >
-        <div className="hstack">
+        <div className="hstack gap-md">
           <UnsplashIcon className="icon" />
           Unsplash
         </div>

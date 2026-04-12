@@ -17,7 +17,7 @@ export default function Projects() {
   return (
     <>
       <section aria-label="Filter buttons">
-        <div className="btn-group">
+        <div className="hstack gap-sm">
           <FilterButton
             label="All"
             value={null}
@@ -36,7 +36,7 @@ export default function Projects() {
         </div>
       </section>
       <section aria-label="Projects">
-        <ul className="vstack">
+        <ul className="vstack gap-md">
           {visibleProjects.map((item) => (
             <li key={item.url}>
               <Card title={item.title} desc={item.preview} url={item.url} />

@@ -31,7 +31,7 @@ export default function Gallery() {
 
   return (
     <section aria-label="Photo gallery">
-      <div className={styles.gallery}>
+      <div className={`${styles.gallery} gap-sm`}>
         {images.map((image) => (
           <div key={image.id} className={`hover-fade ${styles.imageCard}`}>
             <CustomLink href={image.links.html}>

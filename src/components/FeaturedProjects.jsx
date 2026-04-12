@@ -16,7 +16,7 @@ export default function FeaturedProjects() {
           See all
         </Link>
       </div>
-      <ul className="vstack">
+      <ul className="vstack gap-md">
         {featuredProjects.map((item) => (
           <li key={item.url}>
             <Card title={item.title} desc={item.preview} url={item.url} />

@@ -236,11 +236,15 @@ button,
 
 .label {
   font-size: var(--font-caption);
-  color: var(--color-body);
   border: 1px solid var(--color-border);
   background-color: var(--color-gray-light);
   padding: var(--spacing-xs) var(--spacing-sm);
+  color: var(--color-body);
   border-radius: var(--border-radius);
+
+  a {
+    color: inherit;
+  }
 }
 
 .icon,
@@ -279,18 +283,59 @@ button,
   }
 
   .hover-accent,
-  .hover-opacity,
-  .hover-bg {
+  .hover-fade,
+  .hover-button-invert,
+  .hover-button-fill {
     &:hover {
       cursor: pointer;
     }
   }
 
-  .hover-opacity {
+  .hover-fade {
     transition: var(--transition-opacity);
 
     &:hover {
       opacity: 0.8;
+    }
+  }
+
+  .hover-button-invert {
+    transition: var(--transition-color-border), var(--transition-bg);
+
+    .icon,
+    .icon-small {
+      transition: var(--transition-fill);
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+
+    &:hover .icon,
+    &:hover .icon-small {
+      fill: var(--color-accent);
+    }
+  }
+
+  .hover-button-fill {
+    transition: var(--transition-color-border), var(--transition-bg);
+
+    .icon,
+    .icon-small {
+      transition: var(--transition-fill);
+    }
+
+    &:hover {
+      background-color: var(--color-accent);
+      color: var(--color-background);
+      border-color: var(--color-accent);
+    }
+
+    &:hover .icon,
+    &:hover .icon-small {
+      fill: var(--color-background);
     }
   }
 
@@ -310,14 +355,6 @@ button,
     &:hover .icon,
     &:hover .icon-small {
       fill: var(--color-accent);
-    }
-  }
-
-  .hover-bg {
-    transition: var(--transition-bg);
-
-    &:hover {
-      background-color: var(--color-gray-light);
     }
   }
 }

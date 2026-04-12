@@ -5,9 +5,6 @@ export default function Header() {
   return (
     <header>
       <div className={styles.header}>
-        <Link to="/" className={`${styles.logo} hover-accent`}>
-          Jacob
-        </Link>
         <nav>
           <ul>
             <li>

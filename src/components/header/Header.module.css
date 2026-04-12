@@ -20,9 +20,3 @@
     color: var(--color-accent);
   }
 }
-
-.logo {
-  font-size: var(--font-subheading);
-  font-weight: var(--weight-bold);
-  color: var(--color-caption);
-}

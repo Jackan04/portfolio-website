@@ -33,8 +33,7 @@
   --color-gray-light: #f1f0ef;
 
   /* Font Sizes */
-  --font-heading: clamp(1.2rem, 1.1rem + 0.5vw, 1.275rem);
-  --font-subheading: clamp(1.0625rem, 1rem + 0.3vw, 1.175rem);
+  --font-heading: clamp(1.2rem, 1.1rem + 0.5vw, 1.3rem);
   --font-body: 1rem;
   --font-caption: clamp(0.875rem, 0.85rem + 0.13vw, 0.9375rem);
 
@@ -134,12 +133,6 @@ small {
 h2 {
   color: var(--color-heading);
   font-size: var(--font-heading);
-  font-weight: var(--weight-semi);
-}
-
-h3 {
-  color: var(--color-heading);
-  font-size: var(--font-subheading);
   font-weight: var(--weight-semi);
 }
 

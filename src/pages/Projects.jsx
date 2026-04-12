@@ -1,9 +1,13 @@
 import { categories, projects } from "../data/projects.js";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "../components/card/Card.jsx";
 
 export default function Projects() {
   const [filter, setFilter] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   const visibleProjects =
     filter === null

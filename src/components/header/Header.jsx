@@ -4,21 +4,19 @@ import styles from "./Header.module.css";
 export default function Header() {
   return (
     <header>
-      <div className={styles.header}>
-        <nav>
-          <ul>
-            <li>
-              <CustomNavLink to="/" label="Home" />
-            </li>
-            <li>
-              <CustomNavLink to="/projects" label="Projects" />
-            </li>
-            <li>
-              <CustomNavLink to="/photos" label="Photos" />
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul className="hstack gap-lg">
+          <li>
+            <CustomNavLink to="/" label="Home" />
+          </li>
+          <li>
+            <CustomNavLink to="/projects" label="Projects" />
+          </li>
+          <li>
+            <CustomNavLink to="/photos" label="Photos" />
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
@@ -30,7 +28,7 @@ function CustomNavLink({ to, label }) {
       className={({ isActive }) =>
         isActive
           ? `${styles.navLink} ${styles.active} hover-accent`
-          : `${styles.navLink} hover-accent`
+          : `${styles.navLink} hover-accent text-secondary`
       }
     >
       {label}

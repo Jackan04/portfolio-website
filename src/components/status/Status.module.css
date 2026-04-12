@@ -2,15 +2,9 @@
   display: flex;
   width: fit-content;
   align-self: center;
-  align-items: center;
-  gap: var(--spacing-sm);
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--border-radius);
   background-color: var(--color-gray-light);
-}
-
-.error {
-  flex-direction: column;
 }
 
 .spinnerIcon {

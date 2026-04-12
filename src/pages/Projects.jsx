@@ -32,7 +32,7 @@ export default function Projects() {
         </div>
       </section>
       <section aria-label="Projects">
-        <ul className="grid-container">
+        <ul className="list-container">
           {visibleProjects.map((item) => (
             <li key={item.url}>
               <Card title={item.title} desc={item.preview} url={item.url} />

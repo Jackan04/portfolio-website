@@ -51,7 +51,7 @@ export default function Home() {
             See all
           </Link>
         </div>
-        <ul className="grid-container">
+        <ul className="list-container">
           {featuredProjects.map((item) => (
             <li key={item.url}>
               <Card title={item.title} desc={item.preview} url={item.url} />

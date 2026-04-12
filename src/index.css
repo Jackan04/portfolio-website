@@ -162,29 +162,27 @@ section {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: var(--spacing-sm);
 }
 
 .vstack {
   display: flex;
   flex-direction: column;
+}
+
+.gap-sm {
+  gap: var(--spacing-sm);
+}
+
+.gap-md {
   gap: var(--spacing-md);
+}
+
+.gap-lg {
+  gap: var(--spacing-lg);
 }
 
 .justify-between {
   justify-content: space-between;
-}
-
-.btn-group {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-}
-
-.btn-group > * {
-  display: flex;
-  align-self: center;
-  flex-wrap: wrap;
 }
 
 button,
@@ -229,19 +227,6 @@ button,
     border-color: var(--color-accent);
     background-color: var(--color-accent);
     color: var(--color-background);
-  }
-}
-
-.label {
-  font-size: var(--font-caption);
-  border: 1px solid var(--color-border);
-  background-color: var(--color-gray-light);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  color: var(--color-body);
-  border-radius: var(--border-radius);
-
-  a {
-    color: inherit;
   }
 }
 

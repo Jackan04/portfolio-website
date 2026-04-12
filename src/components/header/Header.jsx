@@ -17,9 +17,6 @@ export default function Header() {
               <CustomNavLink to="/projects" label="Projects" />
             </li>
             <li>
-              <CustomNavLink to="/blog" label="Blog" />
-            </li>
-            <li>
               <CustomNavLink to="/photos" label="Photos" />
             </li>
           </ul>

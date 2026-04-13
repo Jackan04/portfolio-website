@@ -3,6 +3,7 @@ import GitHubIcon from "../assets/icons/github.svg?react";
 import LinkedInIcon from "../assets/icons/linkedin.svg?react";
 import UnsplashIcon from "../assets/icons/unsplash.svg?react";
 import EnvelopeIcon from "../assets/icons/envelope.svg?react";
+import FileIcon from "../assets/icons/file.svg?react";
 
 export default function GetInTouch() {
   return (
@@ -31,6 +32,16 @@ export default function GetInTouch() {
         <div className="hstack gap-md">
           <LinkedInIcon className="icon" />
           LinkedIn
+        </div>
+      </CustomLink>
+      <CustomLink
+        href="/resume.pdf"
+        className="hover-accent"
+        aria-label="Download resume"
+      >
+        <div className="hstack gap-md">
+          <FileIcon className="icon" />
+          Resume
         </div>
       </CustomLink>
       <CustomLink

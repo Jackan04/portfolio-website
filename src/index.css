@@ -224,6 +224,7 @@ button,
 .icon,
 .icon-small {
   fill: var(--color-body);
+  flex-shrink: 0;
 }
 
 .icon {

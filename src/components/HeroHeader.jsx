@@ -20,7 +20,7 @@ export default function HeroHeader() {
         </CustomLink>
         <CustomLink
           href="https://github.com/Jackan04?tab=repositories"
-          className="button small outline hover-button-fill"
+          className="button small outline hover-accent"
         >
           <GitHubIcon className="icon-small" />
           GitHub

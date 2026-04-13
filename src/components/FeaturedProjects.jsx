@@ -10,12 +10,8 @@ export default function FeaturedProjects() {
 
   return (
     <>
-      <div className="hstack justify-between">
-        <h2>Featured Projects</h2>
-        <Link to="/projects" className="hover-accent">
-          See all
-        </Link>
-      </div>
+      <h2>Featured Projects</h2>
+
       <ul className="vstack gap-md">
         {featuredProjects.map((item) => (
           <li key={item.url}>

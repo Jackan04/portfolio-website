@@ -48,7 +48,7 @@ export default function Gallery() {
         <button
           onClick={() => fetchNextPage()}
           disabled={isFetchingNextPage}
-          className={`hover-button-invert ${styles.loadMoreButton}`}
+          className={`hover-invert ${styles.loadMoreButton}`}
         >
           {isFetchingNextPage ? "Loading..." : "Load more"}
         </button>

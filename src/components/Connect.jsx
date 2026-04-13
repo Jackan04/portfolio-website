@@ -5,7 +5,7 @@ import UnsplashIcon from "../assets/icons/unsplash.svg?react";
 import EnvelopeIcon from "../assets/icons/envelope.svg?react";
 import FileIcon from "../assets/icons/file.svg?react";
 
-export default function GetInTouch() {
+export default function Connect() {
   return (
     <div className="vstack gap-sm">
       <CustomLink className="hover-accent" href="mailto:jacob.asker@icloud.com">

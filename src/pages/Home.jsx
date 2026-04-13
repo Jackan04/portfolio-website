@@ -1,4 +1,4 @@
-import GetInTouch from "../components/GetInTouch.jsx";
+import Connect from "../components/Connect.jsx";
 import FeaturedProjects from "../components/FeaturedProjects.jsx";
 import HeroHeader from "../components/HeroHeader.jsx";
 
@@ -13,8 +13,8 @@ export default function Home() {
       </section>
 
       <section>
-        <h2>Get in Touch</h2>
-        <GetInTouch />
+        <h2>Connect</h2>
+        <Connect />
       </section>
     </>
   );

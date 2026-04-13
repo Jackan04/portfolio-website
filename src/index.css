@@ -289,26 +289,6 @@ button,
     }
   }
 
-  .hover-button-fill {
-    transition: var(--transition-color-border), var(--transition-bg);
-
-    .icon,
-    .icon-small {
-      transition: var(--transition-fill);
-    }
-
-    &:hover {
-      background-color: var(--color-accent);
-      color: var(--color-background);
-      border-color: var(--color-accent);
-    }
-
-    &:hover .icon,
-    &:hover .icon-small {
-      fill: var(--color-background);
-    }
-  }
-
   .hover-accent {
     transition: var(--transition-color-border);
 

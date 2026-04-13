@@ -7,6 +7,10 @@
   .title {
     color: var(--color-heading);
   }
+
+  p {
+    max-width: 50ch;
+  }
 }
 
 @media (hover: hover) {

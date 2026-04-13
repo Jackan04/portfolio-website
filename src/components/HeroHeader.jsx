@@ -15,13 +15,13 @@ export default function HeroHeader() {
         <div className="hstack gap-sm">
           <CustomLink
             href="mailto:jacob.asker@icloud.com"
-            className="button small hover-invert"
+            className="button hover-invert"
           >
             Contact me
           </CustomLink>
           <CustomLink
             href="https://github.com/Jackan04?tab=repositories"
-            className="button small outline hover-accent"
+            className="button outline hover-accent"
           >
             <GitHubIcon className="icon-small" />
             GitHub

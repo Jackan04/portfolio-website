@@ -5,10 +5,6 @@ import Card from "../components/card/Card.jsx";
 export default function Projects() {
   const [filter, setFilter] = useState(null);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
-
   const visibleProjects =
     filter === null
       ? projects

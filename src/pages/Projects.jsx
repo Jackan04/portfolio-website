@@ -1,5 +1,5 @@
 import { categories, projects } from "../data/projects.js";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Card from "../components/card/Card.jsx";
 
 export default function Projects() {
@@ -48,9 +48,7 @@ function FilterButton({ label, value, filter, setFilter }) {
   return (
     <button
       onClick={() => setFilter(value)}
-      className={
-        value === filter ? "filter-btn active" : "filter-btn hover-accent"
-      }
+      className={value === filter ? "button filter active" : "button filter"}
     >
       {label}
     </button>

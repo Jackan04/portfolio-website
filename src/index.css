@@ -188,16 +188,11 @@ button,
   border: 1px solid transparent;
   background-color: var(--color-accent);
   color: var(--color-background);
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--border-radius);
-  font-size: var(--font-body);
+  font-size: var(--font-caption);
   font-weight: var(--weight-semi);
   width: fit-content;
-
-  &.small {
-    font-size: var(--font-caption);
-    padding: var(--spacing-xs) var(--spacing-sm);
-  }
 
   &.outline {
     background-color: transparent;

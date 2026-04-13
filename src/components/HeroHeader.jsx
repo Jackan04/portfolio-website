@@ -14,7 +14,7 @@ export default function HeroHeader() {
       <div className="hstack gap-sm">
         <CustomLink
           href="mailto:jacob.asker@icloud.com"
-          className="button small hover-button-invert"
+          className="button small hover-invert"
         >
           Contact me
         </CustomLink>

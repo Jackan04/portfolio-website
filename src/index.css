@@ -254,7 +254,7 @@ button,
   button,
   .hover-accent,
   .hover-fade,
-  .hover-button-invert,
+  .hover-invert,
   .hover-button-fill {
     &:hover {
       cursor: pointer;
@@ -269,7 +269,7 @@ button,
     }
   }
 
-  .hover-button-invert {
+  .hover-invert {
     transition: var(--transition-color-border), var(--transition-bg);
 
     .icon,

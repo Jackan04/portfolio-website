@@ -55,12 +55,12 @@
   --spacing-xxxl: 4.5rem;
 
   /* Transitions */
-  --transition-transform: transform 0.18s ease;
-  --transition-opacity: opacity 0.18s ease;
-  --transition-fill: fill 0.18s ease;
-  --transition-color-border: border-color 0.18s ease, color 0.18s ease;
-  --transition-color: color 0.18s ease;
-  --transition-bg: background-color 0.18s ease;
+  --transition-transform: transform 0.15s ease;
+  --transition-opacity: opacity 0.15s ease;
+  --transition-fill: fill 0.15s ease;
+  --transition-color-border: border-color 0.15s ease, color 0.15s ease;
+  --transition-color: color 0.15s ease;
+  --transition-bg: background-color 0.15s ease;
 }
 
 @media (prefers-color-scheme: dark) {

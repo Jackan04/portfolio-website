@@ -7,7 +7,7 @@ export default function Card({ title, desc, url }) {
       <div className="hstack justify-between">
         <b className={styles.title}>{title}</b>
       </div>
-      <small>{desc}</small>
+      <p>{desc}</p>
     </CustomLink>
   );
 }

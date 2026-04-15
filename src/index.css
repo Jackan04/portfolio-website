@@ -81,10 +81,13 @@
 
 html {
   scrollbar-gutter: stable;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
   font-family: "SN Pro", sans-serif;
+  font-size: var(--font-body);
   background-color: var(--color-background);
   line-height: 1.6;
 }

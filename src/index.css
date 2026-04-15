@@ -33,7 +33,7 @@
 
   /* Font Sizes */
   --font-heading: clamp(1.1rem, 1rem + 0.75vw, 1.3rem);
-  --font-body: clamp(0.9rem, 0.85rem + 0.25vw, 1rem);
+  --font-body: 1rem;
   --font-caption: clamp(0.8rem, 0.75rem + 0.25vw, 0.9375rem);
 
   /* Font Weights */

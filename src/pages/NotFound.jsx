@@ -4,13 +4,15 @@ export default function NotFound() {
   return (
     <section>
       <h2>404 - Page Not Found</h2>
-      <p>
-        The page you're looking for seems to have wandered off. Don't worry, it
-        happens to the best of us!
-      </p>
-      <NavLink to="/" className="button hover-invert">
-        Take me home
-      </NavLink>
+      <p> The page you’re looking for doesn’t exist</p>
+      <div className="hstack gap-sm">
+        <NavLink to="/" className="button hover-invert">
+          Go home
+        </NavLink>
+        <NavLink to="/projects" className="button outline hover-invert">
+          Browse projects
+        </NavLink>
+      </div>
     </section>
   );
 }

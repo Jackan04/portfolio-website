@@ -28,7 +28,7 @@ function CustomNavLink({ to, label }) {
       className={({ isActive }) =>
         isActive
           ? `${styles.navLink} ${styles.active} hover-accent`
-          : `${styles.navLink} hover-accent text-secondary`
+          : `${styles.navLink} hover-accent `
       }
     >
       {label}

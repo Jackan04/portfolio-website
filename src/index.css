@@ -111,6 +111,12 @@ footer {
   padding-top: var(--spacing-md);
 }
 
+h2 {
+  color: var(--color-heading);
+  font-size: var(--font-heading);
+  font-weight: var(--weight-semi);
+}
+
 p,
 b {
   font-size: var(--font-body);
@@ -191,7 +197,7 @@ button,
   &.filter {
     border-color: var(--color-border);
     background-color: transparent;
-    color: var(--color-caption);
+    color: var(--color-body);
     padding: var(--spacing-xs) calc(var(--spacing-md) * 0.9);
     border-radius: var(--border-radius-full);
     transition:

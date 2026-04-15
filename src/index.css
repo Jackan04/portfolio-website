@@ -200,9 +200,7 @@ button,
     color: var(--color-body);
     padding: var(--spacing-xs) calc(var(--spacing-md) * 0.9);
     border-radius: var(--border-radius-full);
-    transition:
-      var(--transition-color-border), var(--transition-bg),
-      var(--transition-color);
+    transition: var(--transition-color-border), var(--transition-bg);
 
     &:not(.active):hover {
       border-color: var(--color-accent);

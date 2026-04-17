@@ -1,6 +1,6 @@
 import profileImage from "../assets/images/profile.webp";
 import CustomLink from "./CustomLink";
-import GitHubIcon from "../assets/icons/github.svg?react";
+import FileIcon from "../assets/icons/file.svg?react";
 
 export default function HeroHeader() {
   return (
@@ -20,11 +20,14 @@ export default function HeroHeader() {
             Contact me
           </CustomLink>
           <CustomLink
-            href="https://github.com/Jackan04?tab=repositories"
+            href="/resume.pdf"
             className="button outline hover-accent"
+            aria-label="Download resume"
           >
-            <GitHubIcon className="icon-small" />
-            GitHub
+            <div className="hstack gap-sm">
+              <FileIcon className="icon-small" />
+              Resume
+            </div>
           </CustomLink>
         </div>
       </div>

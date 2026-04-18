@@ -1,6 +1,5 @@
 import profileImage from "../assets/images/profile.webp";
 import CustomLink from "./CustomLink";
-import FileIcon from "../assets/icons/file.svg?react";
 
 export default function HeroHeader() {
   return (
@@ -24,10 +23,7 @@ export default function HeroHeader() {
             className="button outline hover-accent"
             aria-label="Download resume"
           >
-            <div className="hstack gap-sm">
-              <FileIcon className="icon-small" />
-              Resume
-            </div>
+            <div className="hstack gap-sm">View resume</div>
           </CustomLink>
         </div>
       </div>

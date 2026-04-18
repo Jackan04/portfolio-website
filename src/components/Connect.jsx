@@ -25,16 +25,6 @@ export default function Connect() {
         </div>
       </CustomLink>
       <CustomLink
-        href="https://www.linkedin.com/in/jacob-asker-a096a7352/"
-        className="hover-accent"
-        aria-label="Visit Jacob Asker on LinkedIn"
-      >
-        <div className="hstack gap-md">
-          <LinkedInIcon className="icon" />
-          LinkedIn
-        </div>
-      </CustomLink>
-      <CustomLink
         href="/resume.pdf"
         className="hover-accent"
         aria-label="Download resume"
@@ -42,6 +32,16 @@ export default function Connect() {
         <div className="hstack gap-md">
           <FileIcon className="icon" />
           Resume
+        </div>
+      </CustomLink>
+      <CustomLink
+        href="https://www.linkedin.com/in/jacob-asker-a096a7352/"
+        className="hover-accent"
+        aria-label="Visit Jacob Asker on LinkedIn"
+      >
+        <div className="hstack gap-md">
+          <LinkedInIcon className="icon" />
+          LinkedIn
         </div>
       </CustomLink>
       <CustomLink

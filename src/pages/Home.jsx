@@ -13,7 +13,7 @@ export default function Home() {
       </section>
 
       <section>
-        <h2>Connect</h2>
+        <h2>Get in Touch</h2>
         <Connect />
       </section>
     </>

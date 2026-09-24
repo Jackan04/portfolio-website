@@ -8,8 +8,10 @@ export default function HeroHeader() {
       <h2>Jacob Asker</h2>
       <div className="vstack gap-md">
         <p>
-          Junior Full-Stack Developer from Gothenburg, Sweden with a degree in
-          Informatics. I work with JavaScript/TypeScript, React, and Node.js.
+          Informatics graduate building applications across the full stack.
+          Experienced in developing APIs, managing databases, and building
+          responsive user interfaces using JavaScript/TypeScript, React, Node.js
+          and C#.
         </p>
         <div className="hstack gap-sm">
           <CustomLink
